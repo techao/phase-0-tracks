@@ -1,6 +1,8 @@
-# Git Definitions
+# Git Definitions !!!!!!!!!! 
 
 **Instructions: ** Define each of the following Git concepts.
+
+#Orz 
 
 * What is version control?  Why is it useful?
 Version control is the tracking of changes made in files containing information or data, which in this case of coding seems to be mainly plain text. 
