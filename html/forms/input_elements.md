@@ -11,6 +11,7 @@ input elements:
 option
 button
 
+<<<<<<< HEAD
 div - subset if of fieldset (whole form that includes)
 
 
@@ -24,3 +25,5 @@ div - subset if of fieldset (whole form that includes)
 	placeholder = "name this adventure" ==> sub text in input box
 
 <fieldset></fieldset>	== two within the form .
+=======
+>>>>>>> master
