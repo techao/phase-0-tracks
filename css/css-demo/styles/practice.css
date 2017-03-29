@@ -5,4 +5,9 @@ section#contact-info {
 
 .job {
 	background: #e9e5dc;
+	padding-top: 0.5px;
+}
+
+.accomp{
+	font-size: 0.8em;
 }
