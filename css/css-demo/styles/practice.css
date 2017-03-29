@@ -1,11 +1,8 @@
-.contact-info {
-  position: fixed;
-  top: 0px;
-  right: 0px;
-  text-align: center;
-  width: 100%;
-  background-color: white;
-  border-bottom: 1px solid black;
-  padding: 20px;
+
+section#contact-info {
   font-size: 0.8em;
+}
+
+.job {
+	background: #e9e5dc;
 }
