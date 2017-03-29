@@ -1,4 +1,11 @@
 .contact-info {
-
-	font-size: 0.8em;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  text-align: center;
+  width: 100%;
+  background-color: white;
+  border-bottom: 1px solid black;
+  padding: 20px;
+  font-size: 0.8em;
 }
