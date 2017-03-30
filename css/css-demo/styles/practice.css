@@ -11,3 +11,7 @@ section#contact-info {
 .accomp{
 	font-size: 0.8em;
 }
+
+.featured:hover {
+    background-color: yellow;
+}
