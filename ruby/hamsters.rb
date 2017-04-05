@@ -25,6 +25,6 @@ adopt_rating = gets.chomp
 p "What is #{ham_name}'s age? (An estiamte is okay)"
 ham_age = gets.chomp or nil
 
-p "Okay the hamtser you would like to admit into the sanctuary is named #{ham_name} and has a noise level rating of #{noise_level}. The color of #{ham_name}'s fur is descibed as #{fur_color} and is said to be a #{good_adopt} canidate for adoption. When asked about #{ham_name}'s age, the response given was #{ham_age}"
+"Okay the hamtser you would like to admit into the sanctuary is named #{ham_name} and has a noise level rating of #{noise_level}. The color of #{ham_name}'s fur is descibed as #{fur_color} and is said to be a #{good_adopt} canidate for adoption. When asked about #{ham_name}'s age, the response given was #{ham_age}."
 
 
