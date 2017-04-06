@@ -1,71 +1,63 @@
-
 puts "What is your name?"
 suspect_name = gets.chomp
 
-puts "How old are you"
+puts "How old are you?"
 suspect_age = gets.chomp.to_i
 
-puts "What year were you born"
+puts "What year were you born?"
 birth_year = gets.chomp.to_i 
-
-
-puts "Our company cafeteria serves garlic bread. Should we order some for you?"
-garlic_bread = gets.chomp
-
-
-puts "Would you like to enroll in the company's health insurance?"
-health_insurance =  gets.chomp
-
 
 if suspect_age == (2017 - birth_year)
   age_match = true
 else
-  age_match = false
+  bad_data = true
 end
 
-
-if garlic_bread ==  "yes"
-	wants_garlicbread = true
+if suspect_age != (2017 - birth_year)
+	age_wrong = true
 else
-	wants_garlicbread = false	
+	bad_data = true
 end
 
 
-if health_insurance == "yes"
-	wants_insurance = true
+puts "Our company cafeteria serves garlic bread. Should we order some for you? (yes or no)"
+garlic_bread = gets.chomp
+
+	if garlic_bread ==  "yes"
+		likes_garlic = true
+	elsif garlic_bread == "no"
+		dislikes_garlic = true
+	else 
+	  bad_data = true 
+	end
+
+
+puts "Would you like to enroll in the company's health insurance? (yes or no)"
+health_insurance =  gets.chomp
+
+	if health_insurance == "yes"
+		wants_insurance = true
+	elsif health_insurance == "no"
+		waives_insurance  = true
+	else
+	  bad_data = true
+	end
+
+
+if suspect_name == "Drake Cula"
+  puts "Definitely a vampire"
+elsif 
+  suspect_name == "Tu Fang"
+  puts "Definitely a vampire"
 else
-	wants_insurance = false
+  if age_match && (likes_garlic || wants_insurance)
+  	p "Probably not a vampire."
+  elsif age_wrong && (dislikes_garlic || waives_insurance)
+  	p "Probably a vampire."
+  elsif age_wrong && dislikes_garlic && waives_insurance
+	  p "Almost certainly a vampires."
+  else bad_data
+    p "Inconclusive Results"
+  end
 end
 
-
-if vampire_age_match && vampires_like_garlic
-
-
-
-
-
-
-
-
-
-
-# vampires_like_garlic = false
-# wolves_like_garlic = true
-# wolves_like_sunshine = true
-# vampires_like_sunshine = false
-
-# p wolves_like_garlic && wolves_like_sunshine
-
-# p wolves_like_garlic || vampires_like_garlic
-
-# p wolves_like_garlic && vampires_like_garlic
-
-# p wolves_like_garlic && (vampires_like_sunshine || vampires_like_garlic)
-
-# p (wolves_like_garlic && vampires_like_garlic) || wolves_like_sunshine
-
-# p vampires_like_garlic
-
-# p !vampires_like_garlic
-
-p !(wolves_like_sunshine && wolves_like_garlic)
