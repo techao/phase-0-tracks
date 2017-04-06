@@ -1,16 +1,14 @@
 puts "How many employees will be processed?"
-
 number_of_employees = gets.chomp.to_i
 
 until number_of_employees == 0 
+
   puts "What is your name?"
-  suspect_name = gets.chomp
-  
+    suspect_name = gets.chomp
   puts "How old are you?"
-  suspect_age = gets.chomp.to_i
-  
+    suspect_age = gets.chomp.to_i
   puts "What year were you born?"
-  birth_year = gets.chomp.to_i
+    birth_year = gets.chomp.to_i
   
   case suspect_age
   when suspect_age == (2017 - birth_year)
@@ -31,10 +29,9 @@ until number_of_employees == 0
   	else 
   	  bad_data = true 
   	end
-  
-  
+
   puts "Would you like to enroll in the company's health insurance? (yes or no)"
-  health_insurance =  gets.chomp
+    health_insurance =  gets.chomp
   
   	if health_insurance == "yes"
   		wants_insurance = true
@@ -60,6 +57,7 @@ until number_of_employees == 0
       p "Inconclusive Results"
     end
   end
-number_of_employees = number_of_employees - 1
+  
+  number_of_employees = number_of_employees - 1
 end
   
