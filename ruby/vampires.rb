@@ -9,27 +9,37 @@ puts "What year were you born"
 birth_year = gets.chomp.to_i 
 
 
-if suspect_age == (2017 - birth_year)
-
 puts "Our company cafeteria serves garlic bread. Should we order some for you?"
 garlic_bread = gets.chomp
 
-if garlic_bread ==  "yes"
-	vamp_wants_garlicbread = true
-else
-	vamp_wants_garlicbread = false	
-end
 
 puts "Would you like to enroll in the company's health insurance?"
 health_insurance =  gets.chomp
 
-if health_insurance == "yes"
-	vamp_wants_insurance = true
+
+if suspect_age == (2017 - birth_year)
+  vampire_age_match = true
 else
-	vamp_wants_insurance = false
+  vampire_age_match = false
 end
 
-if 
+
+if garlic_bread ==  "yes"
+	wants_garlicbread = true
+else
+	wants_garlicbread = false	
+end
+
+
+if health_insurance == "yes"
+	wants_insurance = true
+else
+	wants_insurance = false
+end
+
+
+if vampire_age_match && vampires_like_garlic
+
 
 
 
