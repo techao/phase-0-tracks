@@ -18,9 +18,9 @@ health_insurance =  gets.chomp
 
 
 if suspect_age == (2017 - birth_year)
-  vampire_age_match = true
+  age_match = true
 else
-  vampire_age_match = false
+  age_match = false
 end
 
 
