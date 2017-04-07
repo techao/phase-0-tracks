@@ -17,7 +17,7 @@ def encrypt_method
 	password_text = gets.chomp
 	index = 0
 	while index < password_text.length 
-		password_text[index].next = password_text[index].next
+		password_text[index] = password_text[index].next
 		index +=1
 	end
 	puts password_text
