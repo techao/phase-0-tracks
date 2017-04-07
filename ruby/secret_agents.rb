@@ -13,5 +13,7 @@
 # as an interger) then word index is equal to the word's index
 
 def encrypt_method
+	puts "Enter text for encryption"
+	pass_word = gets.chomp
 	
 end
