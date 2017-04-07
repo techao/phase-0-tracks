@@ -12,3 +12,6 @@
 # is less than the length of the word (represented
 # as an interger) then word index is equal to the word's index
 
+def encrypt_method
+	
+end
