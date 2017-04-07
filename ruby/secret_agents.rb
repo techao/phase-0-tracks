@@ -15,6 +15,7 @@
 def encrypt_method
 	puts "Enter text for encryption"
 	password_text = gets.chomp
+	index = 0
 	while index < pass_word.lenth 
 		password_text[index].next = password_text[index].next
 		index +=1
@@ -24,7 +25,7 @@ end
 
 encrypt_method
 
-def encrypt_method(pass_word)
+def encrypt_method2(pass_word)
   index = 0
 while index <  pass_word.length
       pass_word[index] =   pass_word[index].next
@@ -32,3 +33,4 @@ while index <  pass_word.length
     end
     puts pass_word
 end
+
