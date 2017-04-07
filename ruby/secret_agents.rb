@@ -16,7 +16,7 @@ def encrypt_method
 	puts "Enter text for encryption"
 	password_text = gets.chomp
 	index = 0
-	while index < password_text.lenth 
+	while index < password_text.length 
 		password_text[index].next = password_text[index].next
 		index +=1
 	end
