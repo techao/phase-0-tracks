@@ -14,10 +14,10 @@
 
 def encrypt_method
 	puts "Enter text for encryption"
-	pass_word = gets.chomp
+	password_text = gets.chomp
 	while index < pass_word.lenth 
-		pass_word[index].next = pass_word[index].next
+		password_text[index].next = password_text[index].next
 		index +=1
 	end
-	puts pass_word[index]
+	puts password_text[index]
 end
