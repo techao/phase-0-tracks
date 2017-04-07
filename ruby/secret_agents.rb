@@ -34,3 +34,11 @@ while index <  pass_word.length
     puts pass_word
 end
 
+# define method
+def decrypt_method
+	puts "Enter text for decryption"
+	password_text = gets.chomp
+	while index > pass_word.lenth 
+		password_text[index].next = password_text[index].next
+		index -=1
+end
