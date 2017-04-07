@@ -16,29 +16,34 @@ def encrypt_method
 	puts "Enter text for encryption"
 	password_text = gets.chomp
 	index = 0
-	while index < pass_word.lenth 
+	while index < password_text.lenth 
 		password_text[index].next = password_text[index].next
 		index +=1
 	end
 	puts password_text
 end
 
+
 encrypt_method
 
-def encrypt_method2(pass_word)
+
+def encrypt_method2(password_text)
   index = 0
-while index <  pass_word.length
+while index <  password_text.length
       password_text[index] =   password_text[index].next
       index += 1
     end
     puts password_text
 end
 
+# note: Both excrypt methods dont return spaces as spaces. 
+# not sure how to do that yet.
+
 # define method
 def decrypt_method
 	puts "Enter text for decryption"
 	password_text = gets.chomp
-	while index > pass_word.lenth 
+	while index > password_text.lenth 
 		password_text[index].next = password_text[index].next
 		index -=1
 end
