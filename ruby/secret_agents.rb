@@ -28,10 +28,10 @@ encrypt_method
 def encrypt_method2(pass_word)
   index = 0
 while index <  pass_word.length
-      pass_word[index] =   pass_word[index].next
+      password_text[index] =   password_text[index].next
       index += 1
     end
-    puts pass_word
+    puts password_text[index]
 end
 
 # define method
