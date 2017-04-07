@@ -20,7 +20,7 @@ def encrypt_method
 		password_text[index].next = password_text[index].next
 		index +=1
 	end
-	puts password_text[index]
+	puts password_text
 end
 
 encrypt_method
@@ -31,7 +31,7 @@ while index <  pass_word.length
       password_text[index] =   password_text[index].next
       index += 1
     end
-    puts password_text[index]
+    puts password_text
 end
 
 # define method
