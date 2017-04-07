@@ -21,3 +21,14 @@ def encrypt_method
 	end
 	puts password_text[index]
 end
+
+encrypt_method
+
+def encrypt_method(pass_word)
+  index = 0
+while index <  pass_word.length
+      pass_word[index] =   pass_word[index].next
+      index += 1
+    end
+    puts pass_word
+end
