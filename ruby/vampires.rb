@@ -40,6 +40,21 @@ until number_of_employees == 0
   	else
   	  bad_data = true
   	end
+
+ 
+   puts "Please name any allergies you might have. You may enter 'done' when you are finished."
+   allergy_input = gets.chomp
+   
+while allergy_input != "done"
+      if allergy_input == "sunshine"
+        p "Probably a vampire."
+      break
+    else allergy_input = ""
+         puts "any more allergies"
+      allergy_input = gets.chomp
+      end
+      next
+    end
   
   if suspect_name == "Drake Cula"
     puts "Definitely a vampire!"
@@ -60,4 +75,5 @@ until number_of_employees == 0
   
   number_of_employees = number_of_employees - 1
 end
-  
+
+"Actually, never mind! What do these questions have to do with anything? Let's all be friends."
