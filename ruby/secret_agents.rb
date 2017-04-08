@@ -51,13 +51,15 @@ def decrypt_method
  # at this point index is = 21, now to apply index to alphabet. 21 is 1 less than 
  # than 22 so should retrieve one str before the original str taken
  # decrypted_string = v, now loop everything so it prints until condition of all encrypted letters are processed is met. 
- 
- if 
- 	encrypted_str_indx = alpha_bet.index("#{password_text[index]}")
- 	decrypted_str_indx = encrypted_str_indx - 1
- end
-
-  puts decrypted_str
-    
+ while index < password_text.length
+ 	if 
+ 		encrypted_str_indx = alpha_bet.index("#{password_text[index]}")
+ 		decrypted_str_indx = encrypted_str_indx - 1
+	end
+	password_text[index] = "#{alpha_bet[decrypted_str_indx]}".next
+	index +=1
+  end 
+end
+puts decrypted_str
 end
 
