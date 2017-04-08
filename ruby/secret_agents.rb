@@ -41,7 +41,7 @@ encrypt_method2("abcdefg")
 # how to find out where letter is in alphabt?
 # goal = decryp "wod" == "vnc"
 
-def encrypt_method
+def decrypt_method
   puts "Enter text for encryption"
   password_text = gets.chomp
   index = 0 
