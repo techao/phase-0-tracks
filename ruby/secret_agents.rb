@@ -57,5 +57,6 @@ def decrypt_method
     decrypted_letter = "abcdefghijklmnopqrstuvwxyz"[index]
  end
   puts decrypted_letter
+    # decrypted_letter = v, now loop everything so it prints until condition of all encrypted letters are processed is met. 
 end
 
