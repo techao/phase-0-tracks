@@ -14,23 +14,23 @@
 
 def encrypt_method
 	puts "Enter text for encryption"
-	password_text = gets.chomp
+	password_str = gets.chomp
 	index = 0
-	while index < password_text.length 
-		password_text[index] = password_text[index].next
+	while index < password_str.length 
+		password_str[index] = password_str[index].next
 		index +=1
 	end
-	puts password_text
+	puts password_str
 end
 encrypt_method
 
-def encrypt_method2(password_text)
+def encrypt_method2(password_str)
   index = 0
-while index <  password_text.length
-      password_text[index] =   password_text[index].next
+while index <  password_str.length
+      password_str[index] =   password_str[index].next
       index += 1
     end
-    puts password_text
+    puts password_str
 end
 encrypt_method2("abcdefg")
 
@@ -43,20 +43,20 @@ encrypt_method2("abcdefg")
 
 def decrypt_method
   puts "Enter text for encryption"
-  password_text = gets.chomp
+  password_str = gets.chomp
   index = 0 
-  encrypted_string = password_text[index]
-  if encrypted_string
-  encrypted_string_index = "abcdefghijklmnopqrstuvwxyz".index("#{encrypted_string}")
+  encrypted_str = password_str[index]
+  if encrypted_str
+  encrypted_str_index = "abcdefghijklmnopqrstuvwxyz".index("#{encrypted_str}")
   end
- # result in 22 assigned to variable encrypted_string_index from string 'w'
-  if encrypted_string_index
-    index = encrypted_string_index - 1
+ # result in 22 assigned to variable encrypted_str_index from str 'w'
+  if encrypted_str_index
+    index = encrypted_str_index - 1
  # at this point index is = 21, now to apply index to alphabet. 21 is 1 less than 
- # than 22 so should retrieve one string before the original string taken
-    decrypted_string = "abcdefghijklmnopqrstuvwxyz"[index]
+ # than 22 so should retrieve one str before the original str taken
+    decrypted_str = "abcdefghijklmnopqrstuvwxyz"[index]
  end
-  puts decrypted_string
+  puts decrypted_str
     # decrypted_string = v, now loop everything so it prints until condition of all encrypted letters are processed is met. 
 end
 
