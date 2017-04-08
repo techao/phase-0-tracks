@@ -48,5 +48,10 @@ def decrypt_method
   if encrypted_letter
   encrypted_letter_index = "abcdefghijklmnopqrstuvwxyz".index("#{encrypted_letter}")
   end
+   # result in 22 assigned to variable encrypted_letter_index
+  if encrypted_letter_index
+    index = encrypted_letter_index - 1
+    decrypted_letter = "abcdefghijklmnopqrstuvwxyz"[index]
+  end
  end
 
