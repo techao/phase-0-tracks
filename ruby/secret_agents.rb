@@ -44,8 +44,8 @@ encrypt_method2("abcdefg")
 def decrypt_method
   puts "Enter text for encryption"
   password_text = gets.chomp
-  encrypted_letter = password_text[index]
   index = 0 
+  encrypted_letter = password_text[index]
   if encrypted_letter
   encrypted_letter_index = "abcdefghijklmnopqrstuvwxyz".index("#{encrypted_letter}")
   end
@@ -55,6 +55,7 @@ def decrypt_method
  # at this point index is = 21, now to apply index to alphabet. 21 is 1 less than 
  # than 22 so should retrieve one letter before the original letter taken
     decrypted_letter = "abcdefghijklmnopqrstuvwxyz"[index]
-  end
  end
+  puts decrypted_letter
+end
 
