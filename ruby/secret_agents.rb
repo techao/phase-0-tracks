@@ -12,25 +12,26 @@
 # is less than the length of the word (represented
 # as an interger) then word index is equal to the word's index
 
-def encrypt_method
-	puts "Enter text for encryption"
-	password_str = gets.chomp
-	index = 0
-	while index < password_str.length 
-		password_str[index] = password_str[index].next
-		index +=1
-	end
-	puts password_str
-end
-encrypt_method
+# def encrypt_method
+# 	puts "Enter text for encryption"
+# 	password_str = gets.chomp
+# 	index = 0
+# 	while index < password_str.length 
+# 		password_str[index] = password_str[index].next
+# 		index +=1
+# 	end
+# 	puts password_str
+# end
+# encrypt_method
 
 def encrypt_method2(password_str)
-  index = 0
-while index <  password_str.length
-      password_str[index] =   password_str[index].next
-      index += 1
-    end
-    puts password_str
+	index = 0
+	while 
+	 index <  password_str.length
+	 password_str[index] =   password_str[index].next
+	 index += 1
+	end
+	 puts password_str
 end
 encrypt_method2("abcdefg")
 
@@ -51,15 +52,14 @@ def decrypt_method
  # at this point index is = 21, now to apply index to alphabet. 21 is 1 less than 
  # than 22 so should retrieve one str before the original str taken
  # decrypted_string = v, now loop everything so it prints until condition of all encrypted letters are processed is met. 
- while index < password_text.length
- 	if 
- 		encrypted_str_indx = alpha_bet.index("#{password_text[index]}")
- 		decrypted_str_indx = encrypted_str_indx - 2
+ 	while index < password_text.length
+	 	if 
+	 	 encrypted_str_indx = alpha_bet.index("#{password_text[index]}")
+	 	 decrypted_str_indx = encrypted_str_indx - 2
+		end
+	 password_text[index] = "#{alpha_bet[decrypted_str_indx]}".next
+	 index +=1 
 	end
-	password_text[index] = "#{alpha_bet[decrypted_str_indx]}".next
-	index +=1
-  end 
-end
-puts decrypted_str
+	puts password_text
 end
 
