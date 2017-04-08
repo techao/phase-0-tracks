@@ -54,7 +54,7 @@ def decrypt_method
  while index < password_text.length
  	if 
  		encrypted_str_indx = alpha_bet.index("#{password_text[index]}")
- 		decrypted_str_indx = encrypted_str_indx - 1
+ 		decrypted_str_indx = encrypted_str_indx - 2
 	end
 	password_text[index] = "#{alpha_bet[decrypted_str_indx]}".next
 	index +=1
