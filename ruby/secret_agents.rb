@@ -44,7 +44,7 @@ encrypt_method2("abcdefg")
 def decrypt_method
   puts "Enter text for encryption"
   password_text = gets.chomp
-  encrypted_letter = password_text
+  encrypted_letter = password_text[index]
   index = 0 
   if encrypted_letter
   encrypted_letter_index = "abcdefghijklmnopqrstuvwxyz".index("#{encrypted_letter}")
