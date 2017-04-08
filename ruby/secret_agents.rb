@@ -47,11 +47,11 @@ def decrypt_method
   index = 0 
   encrypted_str = password_str[index]
   if encrypted_str
-  encrypted_str_index = "abcdefghijklmnopqrstuvwxyz".index("#{encrypted_str}")
+  encrypted_str_indx = "abcdefghijklmnopqrstuvwxyz".index("#{encrypted_str}")
   end
- # result in 22 assigned to variable encrypted_str_index from str 'w'
-  if encrypted_str_index
-    index = encrypted_str_index - 1
+ # result in 22 assigned to variable encrypted_str_indx from str 'w'
+  if encrypted_str_indx
+    index = encrypted_str_indx - 1
  # at this point index is = 21, now to apply index to alphabet. 21 is 1 less than 
  # than 22 so should retrieve one str before the original str taken
     decrypted_str = "abcdefghijklmnopqrstuvwxyz"[index]
