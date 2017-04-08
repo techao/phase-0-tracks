@@ -22,10 +22,7 @@ def encrypt_method
 	end
 	puts password_text
 end
-
-
 encrypt_method
-
 
 def encrypt_method2(password_text)
   index = 0
@@ -35,15 +32,17 @@ while index <  password_text.length
     end
     puts password_text
 end
+encrypt_method2("abcdefg")
 
 # note: Both excrypt methods dont return spaces as spaces. 
 # not sure how to do that yet.
 
-# define method
-def decrypt_method
-	puts "Enter text for decryption"
-	password_text = gets.chomp
-	while index > password_text.lenth 
-		password_text[index].next = password_text[index].next
-		index -=1
-end
+
+# how to find out where letter is in alphabt?
+# goal = decryp "wod" ==> "vnc"
+
+  if encrypted_letter
+  encrypted_letter_index = "abcdefghijklmnopqrstuvwxyz".index("#{encrypted_letter}")
+  end
+
+
