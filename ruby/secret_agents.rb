@@ -12,7 +12,7 @@
 # is less than the length of the word (represented
 # as an interger) then word index is equal to the word's index
 
-def encrypt2
+def encrypt
 	puts "Enter text for encryption"
 	password_str = gets.chomp
 	index = 0
@@ -22,7 +22,7 @@ def encrypt2
 	end
 	puts password_str
 end
-encrypt
+
 
 # def encrypt(password_str)
 # 	index = 0
@@ -64,19 +64,34 @@ encrypt
  # decrypted_string = v, now loop everything so it prints until condition of all encrypted letters are processed is met. 
 
 def decrypt
-  puts "Enter text for encryption"
-  password_str = gets.chomp
+  puts "Enter text for decryption"
+  encrypted_str = gets.chomp
   index = 0 
   alpha_bet = "abcdefghijklmnopqrstuvwxyz"
- 	while index < password_str.length
+ 	while index < encrypted_str.length
 	 	if 
-	 	 encrypted_str_indx = alpha_bet.index("#{password_str[index]}")
+	 	 encrypted_str_indx = alpha_bet.index("#{encrypted_str[index]}")
 	 	 decrypted_str_indx = encrypted_str_indx - 2
 		end
-	 password_str[index] = "#{alpha_bet[decrypted_str_indx]}".next
+	 encrypted_str[index] = "#{alpha_bet[decrypted_str_indx]}".next
 	 index +=1 
 	end
-	puts password_str
+	puts encrypted_str
 end
-decrypt
+
+
+greet_agent = "Hello Agent, would you like to enrypt or decrypt a password?"
+puts greet_agent
+input = gets.chomp
+
+
+if input == "decrypt"
+  decrypt
+end
+
+if input == "encrypt"
+  encrypt
+end
+
+
 
