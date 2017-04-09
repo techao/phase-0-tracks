@@ -12,9 +12,9 @@
 # is less than the length of the word (represented
 # as an interger) then word index is equal to the word's index
 
-def encrypt
-	puts "Enter text for encryption"
-	password_str = gets.chomp
+def encrypt(password_str)
+	# puts "Enter text for encryption"
+	# password_str = gets.chomp
 	index = 0
 	while index < password_str.length 
 		password_str[index] = password_str[index].next
@@ -63,9 +63,9 @@ end
  # than 22 so should retrieve one str before the original str taken
  # decrypted_string = v, now loop everything so it prints until condition of all encrypted letters are processed is met. 
 
-def decrypt
-  puts "Enter text for decryption"
-  encrypted_str = gets.chomp
+def decrypt(encrypted_str)
+  # puts "Enter text for decryption"
+  # encrypted_str = gets.chomp
   index = 0 
   alpha_bet = "abcdefghijklmnopqrstuvwxyz"
  	while index < encrypted_str.length
@@ -79,19 +79,35 @@ def decrypt
 	puts encrypted_str
 end
 
+# Driver Cde
 
 greet_agent = "Hello Agent, would you like to enrypt or decrypt a password?"
 puts greet_agent
 input = gets.chomp
 
+# now add code for invalid user input.
+
+until (input == "decrypt" or input == "encrypt")
+    puts "Please enter 'encrypt' or 'decrypt'." 
+  input = gets.chomp
+end
 
 if input == "decrypt"
-  decrypt
+	  puts "Enter text for decryption"
+  encrypted_str = gets.chomp
+  decrypt(encrypted_str)
+elsif input == "encrypt"
+	puts "Enter text for encryption"
+	password_str = gets.chomp
+  encrypt(password_str)
+else
+  puts "Invalid Request"
+  puts greet_agent
 end
 
-if input == "encrypt"
-  encrypt
-end
-
-
+# method within method only worked to a certain point and does 
+# so when its a method that requires an input.
+# maybe a method that can take an input within an input within a method could run ths 
+# call method
+decrypt(encrypt("swordfish"))
 
