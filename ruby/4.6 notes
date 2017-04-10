@@ -1,0 +1,250 @@
+
+version 1
+
+def encrypt_method
+	puts "Enter text for encryption"
+	password_text = bcd ==> abc
+	index = 1
+	while 3 < 3
+		d = 
+		e
+		index +=1
+	end
+	puts password_text
+end
+notes-------
+[index] needs a value to function with variable. ; value in form of interger and represens the index number correspdonign to string that is represented by the variable.  
+
+b=0 c=1 d=2 ==> a=0 b=1 c=2
+notes--------
+
+ver 2
+def encrypt_method
+	puts "Enter text for encryption"
+	password_text = bcd (==> abc)
+	index = 0
+	while 0 < 3
+		"bcd"[0] = 
+		until 
+			index = alpha_bet[index]
+		index +=1
+	end
+		
+		index +=1
+	end
+	puts password_text
+end
+
+ver 3
+
+def decrypt_method
+	puts "Enter text for encryption"
+	password_text = gets.chomp
+	alpha_bet = "abcdefghijklmnopqrstuvwxyz"
+	index = 0
+
+	alpha_string = alpha_bet[index]
+
+	while index < password_text.length
+
+	unless
+	 password_text[index]
+	  {from index 0 , w basically interpreted by ruby as the string "w"} 
+
+	  = alpha_string
+	   elsif 
+	  	alpha_string != alpha_bet[index] +=1
+	  	end
+
+
+	  {the string "w" which will be inerpreted from an index corresponding to "w" from the variable, alpha_bet which is  index=23}
+		
+		 until
+			 password_text[index] = alpha_bet[index]
+		    index += 1
+	      end
+	    end
+	puts password_text
+end
+
+ver 4
+
+def decrypt_method
+	puts "Enter text for encryption"
+	password_text = gets.chomp
+	alpha_bet = "abcdefghijklmnopqrstuvwxyz"
+	index = 0
+  alpha_string = alpha_bet[index]
+while index < password_text.length
+  unless password_text[index] == alpha_string
+    alpha_bet[index] +=1
+	 until
+			 password_text[index] = alpha_bet[index]
+		    index += 1
+	      end
+	    end
+	   end
+	puts password_text
+end
+ decrypt_method
+
+ver 5
+
+def decrypt_method
+	puts "Enter text for encryption"
+	password_text = gets.chomp
+	alpha_bet = "abcdefghijklmnopqrstuvwxyz"
+	index = 0
+  alpha_string = alpha_bet[index]
+while index < password_text.length
+  unless
+	 password_text[index] = alpha_string
+	else
+	  alpha_string != alpha_bet[index] +=1
+	 until
+			 password_text[index] = alpha_bet[index]
+		    index += 1
+	      end
+	    end
+	   end
+	puts password_text
+end
+ decrypt_method
+
+
+ver 6
+
+ def decrypt_method
+	puts "Enter text for encryption"
+	password_text = gets.chomp
+	alpha_bet = "abcdefghijklmnopqrstuvwxyz"
+	index = 0
+
+	alpha_string = alpha_bet[index]
+
+	while index < password_text.length
+
+	unless
+	 password_text[index]
+
+	  = alpha_string
+	   elsif 
+	  	alpha_string != alpha_bet[index] +=1
+	  	end
+
+		
+		 until
+			 password_text[index] = alpha_bet[index]
+		    index += 1
+	      end
+	    end
+	puts password_text
+end
+
+ver 7
+
+working decryptor
+
+
+def decrypt_method
+	puts "Enter text for encryption"
+	password_text = gets.chomp
+	alpha_bet = "abcdefghijklmnopqrstuvwxyz"
+	index = 0
+  alpha_string = alpha_bet[index]
+while index < password_text.length
+  unless password_text[index] == alpha_string
+			 password_text[index] = alpha_bet[index]
+		    index += 1
+	      end
+	    end
+	puts password_text
+end
+ decrypt_method
+ver 8
+#  wod ==> vnc
+
+def encrypt_method
+  puts "Enter text for encryption"
+  password_text = gets.chomp
+# until password_text.length = index -=1
+  index = 0
+  while 
+  index < password_text.length 
+	  variable_1 = password_text[index] 
+	  if variable_1
+
+	    "abcdefghijklmnopqrstuvwxyz".index("#{variable_1}")
+	 end
+#{index = 22} that is if condition took variable_1 as "w" and gave index =22
+
+		  "abcdefghijklmnopqrstuvwxyz"[index] == variable_1
+		  index -=1 
+		  # {index=21}
+# 	at this point index should = 21 and correspond to v in the alphabet string.
+      end
+		end 
+	
+  puts password_text
+end
+
+encrypt_method
+
+ver 9
+def decrypt_method
+	puts "Enter text for encryption"
+	password_text = gets.chomp
+	alpha_bet = "abcdefghijklmnopqrstuvwxyz"
+	index = 0
+  alpha_string = alpha_bet[index]
+while index < password_text.length
+  unless password_text[index] == alpha_string
+			 password_text[index] = alpha_bet[index]
+		    index += 1
+	      end
+	    end
+	puts password_text
+end
+ decrypt_method
+
+ ----------
+
+
+def encrypt_method
+  puts "Enter text for encryption"
+  password_text = gets.chomp
+  index = 0
+  while index < password_text.length 
+	  variable_1 = password_text[index] 
+	  until
+	  "abcdefghijklmnopqrstuvwxyz"[index] == variable_1
+		index +=1
+		end 
+  end
+  puts password_text
+end
+encrypt_method 
+
+tus far got to spit out the same code now i need to get it to pick the letter before and print i
+		
+ ver 10 fromscratch
+
+
+def encrypt_method
+  puts "Enter text for encryption"
+  password_text = gets.chomp
+  index = 0 
+  encrypted_letter = password_text[index]
+  if encrypted_letter
+  encrypted_letter_index = "abcdefghijklmnopqrstuvwxyz".index("#{encrypted_letter}")
+  end
+  # result in 22 assigned to variable encrypted_letter_index
+  if encrypted_letter_index
+    index = encrypted_letter_index - 1
+    decrypted_letter = "abcdefghijklmnopqrstuvwxyz"[index]
+  end
+  # at this point index is = 21, now to apply index 
+# wirte function to grab that letter before_filter
+    if encrypted_letter_index = index -=1
+    decrypted_letter = "abcdefghijklmnopqrstuvwxyz"[index]
+  end
