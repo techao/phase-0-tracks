@@ -20,7 +20,7 @@ def encrypt(password_str)
 		password_str[index] = password_str[index].next
 		index +=1
 	end
-	puts password_str
+	password_str
 end
 
 
@@ -76,7 +76,7 @@ def decrypt(encrypted_str)
 	 encrypted_str[index] = "#{alpha_bet[decrypted_str_indx]}".next
 	 index +=1 
 	end
-	puts encrypted_str
+	encrypted_str
 end
 
 # Driver Cde
@@ -89,20 +89,20 @@ input = gets.chomp
 
 until (input == "decrypt" or input == "encrypt")
     puts "Please enter 'encrypt' or 'decrypt'." 
-  input = gets.chomp
+  	input = gets.chomp
 end
 
 if input == "decrypt"
-	  puts "Enter text for decryption"
-  encrypted_str = gets.chomp
-  decrypt(encrypted_str)
+	puts "Enter text for decryption"
+  	encrypted_str = gets.chomp
+  	puts decrypt(encrypted_str)
 elsif input == "encrypt"
 	puts "Enter text for encryption"
 	password_str = gets.chomp
-  encrypt(password_str)
+  	puts encrypt(password_str)
 else
-  puts "Invalid Request"
-  puts greet_agent
+ 	puts "Invalid Request"
+  	puts greet_agent
 end
 
 # method within method only worked to a certain point and does 
