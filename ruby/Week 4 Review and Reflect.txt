@@ -1,0 +1,50 @@
+string - any read text in ruy
+to display text for a user to read
+
+interger - all numbers
+when trying to quantify variables
+
+float - ineter expressed with decmal
+when trying to precicesly quantify variables
+
+nil - default value of nothing
+reseting a value 
+
+
+boolean. -  true or false value/statement/variable
+creating binary conditions 
+
+algorithm
+a process of calculation given a set of ordered commands and rules 
+
+2 common cattegories of algorithm in computer science
+list, arrays, and stacks & hash functions.
+
+What is a method? Why might a programmer choose to use a method?
+set of code that can be called at any point within a program.
+Methods are more sufficient and processing multiple points of data and more effective when you have different bits of code that need to collaborate. 
+
+Return value
+type of return the method puts out given the declared value 
+Side effect 
+An unintended return or outcome from a method 
+Parameter 
+the variable that is part of the method's declaration
+Argument
+the information that taken or sent to the method and gets processed or modified and used to return specfic results given what the code in the method does. 
+Implicit Return 
+The return value of the last evaluated expression in a method in cascading order. 
+
+Global scope is the space of a scripton that encompasses information or data accessible out side of a function, basically vairables defined outside of a function fall into the global scope.
+Because not all data is entirely availaible in all realms of a program, that is, not all variables are accessible by all the parts of code, it can restrict how certain codes funtion and how it may need to be written to do what it was intended for.
+
+Flow contorl
+The management of data moving between to points, i.e. computers, etc. within a network so data is processed at a effecient pace. The prevention of a data based version of a traffic jam or highway collision. 
+Prorams would choose to use this to prevent a program from crashing from exectuing too much at once.
+
+Loop would re-run the code within a method until a condition or a desired result is met. This prevents repeating code to to do the same task until that desired result or condition is met.
+
+If can create specfic condtions that results in a return value rather then having to arrive at the same condition in theory through much more necessary coding. Else and Elsif do the same as compliments to the It method. 
+While and until are the actual variables with a built in method that results in a loop. While will generally create a loop until a condition is met while until creates a false/negative condition that loops until is met.
+
+
