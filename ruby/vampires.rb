@@ -50,13 +50,11 @@ def vamp_dect
     health_insurance = false
   end
 
-if suspect_name == "Drake Cula"
+  if suspect_name == "Drake Cula"
     p "Definitely a vampire!"
-    jump
   elsif 
     suspect_name == "Tu Fang"
-    p "Definitely a vampire!"
-    jump  
+    p "Definitely a vampire!" 
 # if suspect age is correct and wants garlic bread, 
 # then probably not a vampire.
   elsif suspect_age && likes_garlic
@@ -69,7 +67,6 @@ if suspect_name == "Drake Cula"
   elsif (suspect_age == false && likes_garlic == false) && health_insurance == false
    p "Almost certaiinly a vampire. "
   else
-
    p "Results Inconclusive"
   end
 end
