@@ -23,3 +23,18 @@ puts "Would you like to enroll in the company’s health insurance?"
   # -year of birth
   # -want garlic bread
   # -want health insurance 
+
+# if suspect age is correct and wants garlic bread, 
+# then probably not a vampire.
+
+# age wrong and waives insurance means p "probably a vampire"
+
+# age wrong + doesnt want garlic + waives healthy
+# p "almost certaiinly a vamp."
+
+
+# Even if the employee is an amazing liar otherwise, anyone going by 
+# the name of “Drake Cula” or “Tu Fang” is clearly a vampire, because come on. 
+# In that case, you should print “def. a vamp. ”
+
+# anything else should lead to unconclusive reuslts. 
