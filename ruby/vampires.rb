@@ -33,33 +33,34 @@ def vamp_dect
   else 
     suspect_age = false
   end
+  
   if likes_garlic == "y"
     likes_garlic = true
-  else 
+  else likes_garlic !="y"
     likes_garlic = false
   end
-    if health_insurance == "y"
+  
+  if health_insurance == "y"
     health_insurance = true
-  else
-    health_insurance =false
+  else health_insurance != "y"
+    health_insurance = false
   end
 
-  # if suspect age is correct and wants garlic bread, 
+# if suspect age is correct and wants garlic bread, 
 # then probably not a vampire.
-  if suspect_age && likes_garlic
+if suspect_age && likes_garlic
     p "Probably not a vampire."
   end
 # age wrong and waives insurance means p "probably a vampire"
-
-
-  if 
-   
+  if suspect_age = false && health_insurance = false
+   p "Probably a vampire."
   end 
- end
-
 # age wrong + doesnt want garlic + waives healthy
 # p "almost certaiinly a vamp."
-
+  if (suspect_age == false && likes_garlic == false) && health_insurance == false
+    p "Almost certaiinly a vampire. "
+  end
+end
 
 # Even if the employee is an amazing liar otherwise, anyone going by 
 # the name of “Drake Cula” or “Tu Fang” is clearly a vampire, because come on. 
