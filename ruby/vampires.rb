@@ -46,24 +46,33 @@ def vamp_dect
     health_insurance = false
   end
 
+if suspect_name == "Drake Cula"
+    puts "Definitely a vampire!"
+    jump
+  elsif 
+    suspect_name == "Tu Fang"
+    puts "Definitely a vampire!"
+    jump  
 # if suspect age is correct and wants garlic bread, 
 # then probably not a vampire.
-if suspect_age && likes_garlic
-    p "Probably not a vampire."
-  end
+  elsif suspect_age && likes_garlic
+   p "Probably not a vampire."
 # age wrong and waives insurance means p "probably a vampire"
-  if suspect_age = false && health_insurance = false
+  elsif suspect_age = false && (likes_garlic = false || health_insurance = false)
    p "Probably a vampire."
-  end 
 # age wrong + doesnt want garlic + waives healthy
 # p "almost certaiinly a vamp."
-  if (suspect_age == false && likes_garlic == false) && health_insurance == false
-    p "Almost certaiinly a vampire. "
+  elsif (suspect_age == false && likes_garlic == false) && health_insurance == false
+   p "Almost certaiinly a vampire. "
+  else
+   p "Results Inconclusive"
   end
 end
-
 # Even if the employee is an amazing liar otherwise, anyone going by 
 # the name of “Drake Cula” or “Tu Fang” is clearly a vampire, because come on. 
 # In that case, you should print “def. a vamp. ”
+# --- note, this is a condtion that would override all other conditions thus adding
+# to top of conditions.
+
 
 # anything else should lead to unconclusive reuslts. 
