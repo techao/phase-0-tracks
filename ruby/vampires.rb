@@ -5,6 +5,8 @@
 # inquire age and and year of birth
 #like/want garlic bread?
 #opt for company health insurance?
+ puts "How many employees will be processed?"
+  number_of_employees = gets.chomp.to_i
 
 def vamp_dect
   puts "What is your name?"
@@ -67,14 +69,25 @@ def vamp_dect
   elsif (suspect_age == false && likes_garlic == false) && health_insurance == false
     "Almost certaiinly a vampire. "
   else
+    # anything else should lead to unconclusive reuslts. 
     "Results Inconclusive"
   end
 end
+ until number_of_employees == 0 
+  puts vamp_dect
+  number_of_employees = number_of_employees - 1
+ end
+
+
 # Even if the employee is an amazing liar otherwise, anyone going by 
 # the name of “Drake Cula” or “Tu Fang” is clearly a vampire, because come on. 
 # In that case, you should print “def. a vamp. ”
 # --- note, this is a condtion that would override all other conditions thus adding
 # to top of conditions.
 
+# Release three, procees multi. employees. 
+#
 
-# anything else should lead to unconclusive reuslts. 
+
+
+
