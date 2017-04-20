@@ -90,6 +90,9 @@ end
   number_of_employees = number_of_employees - 1
  end
 
+ "Actually, never mind! What do these questions have to do with anything? Let's all be friends."
+
+
 
 # Even if the employee is an amazing liar otherwise, anyone going by 
 # the name of “Drake Cula” or “Tu Fang” is clearly a vampire, because come on. 
