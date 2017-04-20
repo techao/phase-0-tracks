@@ -36,22 +36,26 @@ def vamp_dect
   
   if likes_garlic == "y"
     likes_garlic = true
-  else likes_garlic !="y"
+  end
+  if
+    likes_garlic =="n"
     likes_garlic = false
   end
   
   if health_insurance == "y"
     health_insurance = true
-  else health_insurance != "y"
+  end
+  if
+    health_insurance == "n"
     health_insurance = false
   end
 
 if suspect_name == "Drake Cula"
-    puts "Definitely a vampire!"
+    p "Definitely a vampire!"
     jump
   elsif 
     suspect_name == "Tu Fang"
-    puts "Definitely a vampire!"
+    p "Definitely a vampire!"
     jump  
 # if suspect age is correct and wants garlic bread, 
 # then probably not a vampire.
@@ -65,6 +69,7 @@ if suspect_name == "Drake Cula"
   elsif (suspect_age == false && likes_garlic == false) && health_insurance == false
    p "Almost certaiinly a vampire. "
   else
+
    p "Results Inconclusive"
   end
 end
