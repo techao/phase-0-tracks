@@ -51,23 +51,23 @@ def vamp_dect
   end
 
   if suspect_name == "Drake Cula"
-    p "Definitely a vampire!"
+     "Definitely a vampire!"
   elsif 
     suspect_name == "Tu Fang"
-    p "Definitely a vampire!" 
+     "Definitely a vampire!" 
 # if suspect age is correct and wants garlic bread, 
 # then probably not a vampire.
   elsif suspect_age && likes_garlic
-   p "Probably not a vampire."
+    "Probably not a vampire."
 # age wrong and waives insurance means p "probably a vampire"
   elsif suspect_age = false && (likes_garlic = false || health_insurance = false)
-   p "Probably a vampire."
+    "Probably a vampire."
 # age wrong + doesnt want garlic + waives healthy
 # p "almost certaiinly a vamp."
   elsif (suspect_age == false && likes_garlic == false) && health_insurance == false
-   p "Almost certaiinly a vampire. "
+    "Almost certaiinly a vampire. "
   else
-   p "Results Inconclusive"
+    "Results Inconclusive"
   end
 end
 # Even if the employee is an amazing liar otherwise, anyone going by 
