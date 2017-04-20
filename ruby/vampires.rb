@@ -52,6 +52,18 @@ def vamp_dect
     health_insurance = false
   end
 
+puts "Please name any allergies you might have. You may enter 'done' when you are finished."
+   allergy_input = gets.chomp
+while allergy_input != "done"
+      if allergy_input == "sunshine"
+        p "Probably a vampire."
+      break
+    else allergy_input = ""
+         puts "any more allergies?"
+      allergy_input = gets.chomp
+      end
+      next
+    end
   if suspect_name == "Drake Cula"
      "Definitely a vampire!"
   elsif 
@@ -88,6 +100,7 @@ end
 # Release three, procees multi. employees. 
 #
 
-
-
+# In addition to the other questions in the survey, use a loop to ask the employee to name any allergies, one at a time. The employee can type “done” when finished.
+# As long as the allergy is not “sunshine,” continue the loop for as long as is needed. If at any point the employee lists “sunshine” as an allergy, skip directly to the result of “Probably a vampire.”
+# ==> add in lines 55- 66
 
