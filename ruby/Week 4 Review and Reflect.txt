@@ -1,4 +1,10 @@
-string - any read text in ruy
+1.	A variable in a bit of text that is used to represent a large amount of information or data which can be refered to its value and can occur in the form of stirngs, intergers, booleans, methods, or other variables. 
+Programmers use variables to recall other information or data within a program so that instead of having to retype or or input all of the necessary information it can be recalled in the form of of a variable which is much more functional and practical given the size of text generally used. 
+
+2.	First the variable 'last_name' is evaluated by ruby and then replaced with the string value "Lincoln". Second, the variable 'first_name' is evaluated and then replaced with the string value "Abraham." Next ruby recognizes that the two varaibles are compatible since they are both string vlaues and so can be added together thus are combined. Ruby then evaluates the variable 'full_name' and then assigns the new string vlaue "AbrahamLincoln" to that variablel.  
+
+3.	
+string - any read text in ruby
 to display text for a user to read
 
 interger - all numbers
@@ -7,23 +13,24 @@ when trying to quantify variables
 float - ineter expressed with decmal
 when trying to precicesly quantify variables
 
-nil - default value of nothing
-reseting a value 
+nil - default value of nothing, no return value
 
-
-boolean. -  true or false value/statement/variable
+boolean -  true or false value/statement/variable
 creating binary conditions 
 
-algorithm
-a process of calculation given a set of ordered commands and rules 
+4.	
+algorithm - a process of calculation given a set of ordered commands and rules 
 
-2 common cattegories of algorithm in computer science
+5.	
+Two common categories of algorithm in computer science
 list, arrays, and stacks & hash functions.
 
+6.	
 What is a method? Why might a programmer choose to use a method?
 set of code that can be called at any point within a program.
 Methods are more sufficient and processing multiple points of data and more effective when you have different bits of code that need to collaborate. 
 
+7.	
 Return value
 type of return the method puts out given the declared value 
 Side effect 
@@ -38,13 +45,16 @@ The return value of the last evaluated expression in a method in cascading order
 Global scope is the space of a scripton that encompasses information or data accessible out side of a function, basically vairables defined outside of a function fall into the global scope.
 Because not all data is entirely availaible in all realms of a program, that is, not all variables are accessible by all the parts of code, it can restrict how certain codes funtion and how it may need to be written to do what it was intended for.
 
-Flow contorl
+9.	
+Contorl flow:
 The management of data moving between to points, i.e. computers, etc. within a network so data is processed at a effecient pace. The prevention of a data based version of a traffic jam or highway collision. 
 Prorams would choose to use this to prevent a program from crashing from exectuing too much at once.
 
-Loop would re-run the code within a method until a condition or a desired result is met. This prevents repeating code to to do the same task until that desired result or condition is met.
+10. 
+'Loop' refers to the re-running of code within a method until a condition or a desired result is met. This prevents repeating code to to do the same task until that desired result or condition is met.
 
-If can create specfic condtions that results in a return value rather then having to arrive at the same condition in theory through much more necessary coding. Else and Elsif do the same as compliments to the It method. 
-While and until are the actual variables with a built in method that results in a loop. While will generally create a loop until a condition is met while until creates a false/negative condition that loops until is met.
+'If' can create specfic condtions that results in a return value rather then having to arrive at the same condition in theory through much more necessary coding. 'Else' and 'Elsif' do the same as compliments to the 'If' method. 
+
+'While' and 'until' are the variables that call a built in method that results in a loop, in Ruby. 'While' will generally creates a loop until a condition is met while until creates a false/negative condition that loops until is met.
 
 
