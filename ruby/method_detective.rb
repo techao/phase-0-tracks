@@ -30,7 +30,7 @@
 "The mystery of the missing first letter".delete "T"
 => "he mystery of the missing first letter"
 
-"Elementary,    my   dear        Watson!".gsub(/\s+/, "") 
+"Elementary,    my   dear        Watson!".squeeze(" ")  
 => "Elementary, my dear Watson!"
 
 "z".ord
