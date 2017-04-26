@@ -35,7 +35,7 @@
 
 "z".ord
 => 122
-#
+# it seems as though 122 just happens to be the character encoding for z
 
 "How many times does the letter 'a' appear in this string?".count "a"
 => 4
