@@ -12,17 +12,14 @@
 
 "enhance".center(20)
 => "    enhance    "
-.ljust
+
 
 "Stop! You’re under arrest!".upcase
 => "STOP! YOU’RE UNDER ARREST!"
 
-"the usual" + " suspects".to_s
+"the usual" + " suspects"
 => "the usual suspects"
-.replace
-
-# " suspects".
-# => "the usual suspects"
+.to_s 
 
 "The case of the disappearing last letter".chop
 => "The case of the disappearing last lette"
@@ -33,13 +30,12 @@
 "The mystery of the missing first letter".delete "T"
 => "he mystery of the missing first letter"
 
-"Elementary,    my   dear        Watson!".strip
+"Elementary,    my   dear        Watson!".gsub(/\s+/, "") 
 => "Elementary, my dear Watson!"
 
 "z".ord
 => 122
-# (What is the significance of the number 122 in relation to the character z?)
-no clue....
+#
 
 "How many times does the letter 'a' appear in this string?".count "a"
 => 4
