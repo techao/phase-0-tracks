@@ -8,5 +8,16 @@
 # prompt user for type of house
 # prompt user for number of rooms
 
+design_project = {
+name: ""
+age: ""
+child_count: ""
+window_count: ""
+house_type: ""
+room_count: ""
+
+}
+
+
 
 
