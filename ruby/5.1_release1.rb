@@ -8,9 +8,12 @@ designer_application = {
 	email: "designer's email",
 	phone: "designer's phone number",
 	fav_blue: "favorite shade of blue",
-	wallpaper_pref: [],
-	ombre_is: []
+	wallpaper_pref:[],
+	ombre_is:[]
 }
+
+variable = name
+
 
 puts "Name?"
 designer_application[:name] = gets.chomp
@@ -39,16 +42,8 @@ puts "How would you define ombre given the choices: ◯ Fierce
 designer_application[:ombre_is] = gets.chomp
 
 # store a key in a variable
-# ex : 
-
- or 
-
-post = {
-  "name" => ,
-  "address" => ,
-  "email" => ,
-  "phone" => ,
-  "fave shade of blue" => ,
-  "wallpaper preference" => ,
-  "ombre is:" =>
-}
+# key is not a local object so cant store key in variable...i think
+# What happens when try an expression like your_hash[:name] + your_hash[:address] 
+# (or whatever keys you used)? 
+# Does it affect the original hash?
+# answer : does not affect original hash. 
