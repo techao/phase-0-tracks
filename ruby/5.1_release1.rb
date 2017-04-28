@@ -21,10 +21,10 @@ designer_application[:address] =gets.chomp
 puts "Enter Email"
 designer_application[:email] = gets.chomp
 
-puts "Enter phonenumber"
+puts "Enter phone number"
 designer_application[:phone] = gets.chomp
 
-puts "Enter favorite shadeb blue"
+puts "Enter favorite shade of blue"
 designer_application[:fav_blue] = gets.chomp
 
 puts "Pick wallpaper preferences; enter all that apply(▢ Paisley
@@ -38,7 +38,8 @@ puts "How would you define ombre given the choices: ◯ Fierce
 ◯ Practically medieval in its appalling irrelevance"
 designer_application[:ombre_is] = gets.chomp
 
-
+# store a key in a variable
+# ex : 
 
  or 
 
