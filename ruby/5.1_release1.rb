@@ -12,7 +12,6 @@ designer_application = {
 	ombre_is:[]
 }
 
-variable = name
 
 
 puts "Name?"
@@ -42,6 +41,10 @@ puts "How would you define ombre given the choices: ◯ Fierce
 designer_application[:ombre_is] = gets.chomp
 
 # store a key in a variable
+
+
+# variable = name
+
 # key is not a local object so cant store key in variable...i think
 # What happens when try an expression like your_hash[:name] + your_hash[:address] 
 # (or whatever keys you used)? 
