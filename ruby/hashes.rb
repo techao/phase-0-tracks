@@ -18,6 +18,17 @@ room_count: ""
 
 }
 
+puts "Name?"
+
+puts " Age?"
+
+puts "Enter number of children."
+
+puts "Enter number of windows."
+
+puts "Enter type of house."
+
+puts "Enter number of rooms."
 
 
 
