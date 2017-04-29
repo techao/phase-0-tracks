@@ -9,15 +9,8 @@
 # prompt user for number of rooms
 
 design_project = {
-name: ""
-age: ""
-child_count: ""
-window_count: ""
-house_type: ""
-room_count: ""
-
 }
-
+# appending value pairs
 puts "Name?"
 design_project[:name] = gets.chomp
 
@@ -37,3 +30,18 @@ puts "Enter number of rooms."
 design_project[:house_type] = gets.chomp
 
 
+# give user chance to correct input
+
+do 
+puts "Any changes or corrections to the application?"
+answer = gets.chomp
+break if answer == "none"
+else 
+	puts "Would would you like to correct?"
+# no loop, thus conidtion nested in conditon
+edit = gets.chomp
+
+	puts "What would you like to change it to?"
+design_project[edit.to_sym] = gets.chomp
+	
+end
