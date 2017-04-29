@@ -27,7 +27,7 @@ puts "Enter type of house."
 design_project[:house_type] = gets.chomp
 
 puts "Enter number of rooms."
-design_project[:house_type] = gets.chomp
+design_project[:room_count] = gets.chomp
 
 
 # give user chance to correct input
@@ -37,7 +37,8 @@ puts "Any changes or corrections to the application?"
 answer = gets.chomp
 break if answer == "none"
 else 
-	puts "Would would you like to correct?"
+	puts "Would would you like to correct? (Please enter: name, age, child_count, window_count, 
+	house_type, or room_count)"
 # no loop, thus conidtion nested in conditon
 edit = gets.chomp
 
