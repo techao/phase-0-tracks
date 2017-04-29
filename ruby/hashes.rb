@@ -29,20 +29,21 @@ design_project[:house_type] = gets.chomp
 puts "Enter number of rooms."
 design_project[:room_count] = gets.chomp
 
+p design_project
 
 # give user chance to correct input
 
-do 
 puts "Any changes or corrections to the application?"
 answer = gets.chomp
 break if answer == "none"
 else 
 	puts "Would would you like to correct? (Please enter: name, age, child_count, window_count, 
 	house_type, or room_count)"
-# no loop, thus conidtion nested in conditon
+# no loop, assuming only one of the keys need correcting.
 edit = gets.chomp
 
 	puts "What would you like to change it to?"
 design_project[edit.to_sym] = gets.chomp
-	
 end
+
+p design_project 
