@@ -1,9 +1,26 @@
-# Teaspoon meanu
+# Teaspoon menu
 
 
 # menu
 
 # drink menu
+	# specialty drinks
+		# house milk tea
+		# taro lvover
+		# mango funtime 
+		# classic chai tea
+
+
+	# snow_ice_specials
+		# callifornia snow
+		# nutty taro
+		#hangover 3
+		# afternoon tea
+
+	# strawberry serries 
+		# strawberry sangria
+		# strawberry velvet
+# non existent food menu
 
 
 teaspoon_menu{
@@ -23,23 +40,8 @@ teaspoon_menu{
 	food_menu: []
 }
 
+p teaspoon_menu[:drink_menu][:specialty_drinks](1)
+=> "Taro Lover"
 
-
-	# specialty drinks
-		# house milk tea
-		# taro lvover
-		# mango funtime 
-		# classic chai tea
-
-
-	# snow_ice_specials
-		# callifornia snow
-		# nutty taro
-		#hangover 3
-		# afternoon tea
-
-	# strawberry serries 
-		# strawberry sangria
-		# strawberry velvet
-# non existent food menu
-
+p teaspoon_menu[drink_menu][strawberry_specials](0)
+=> "strawberry sangria"
