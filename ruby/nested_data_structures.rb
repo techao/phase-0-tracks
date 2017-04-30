@@ -4,17 +4,21 @@
 # menu
 
 # drink menu
+
+
 teaspoon_menu{
+	drink_menu: { 
 
-	drink_menu: {
-
-	specialty_drinks: ["House Milk Tea", "Taro Lover",
+		specialty_drinks: 
+		["House Milk Tea", "Taro Lover",
 		"Mango Funtime", "Classic Chai Tea"] 
 
-	snow_specials: ["California Speacial", "Nutty Taro",
-	"Hangover 3", "Afternoon 3"]
+		snow_specials: 
+		["California Speacial", "Nutty Taro",
+		"Hangover 3", "Afternoon 3"]
 
-	strawberry_specials: ["strawberry sangria", "strawberry velvet"]}
+	strawberry_specials: [
+		"strawberry sangria", "strawberry velvet"]}
 
 	food_menu: []
 }
