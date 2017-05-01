@@ -13,9 +13,9 @@
 alias = {}
 
 puts "What is your first name?"
-alias[:firstname] => gets.chomp 
+alias[:firstname] = gets.chomp 
 puts "What is your last name?"
-alias[:lastname:] = gets.chomp
+alias[:lastname] = gets.chomp
 
 
 
