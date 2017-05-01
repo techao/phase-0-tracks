@@ -10,12 +10,13 @@
 
 
 
-alias = {}
+name = {
+}
 
 puts "What is your first name?"
-alias[:firstname] = gets.chomp 
+name[:firstname] = gets.chomp 
 puts "What is your last name?"
-alias[:lastname] = gets.chomp
+name[:lastname] = gets.chomp
 
 
 
