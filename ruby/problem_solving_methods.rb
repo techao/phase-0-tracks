@@ -10,6 +10,17 @@ else
 end
  p sarch_array(arr_2, 4)
 
+def search_array(array, interger)
+	array.each_with_index do | ar_numb, index |
+	if interger == ar_numb
+		return index
+		end
+	end
+end
+
+ p search_array(arr_2, 4)
+
+
 
 # method 
 # define
