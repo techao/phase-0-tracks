@@ -1,6 +1,7 @@
 1.	Data structures are useful in programming for accessing large amounts of data that can be grouped together. 
 
 2.	An array a collection of objects, that can be seen represented as a vriable with multple vlaues. The collection objects are indexed, meaning the first value within the brakcets, '[]' is index 0 and so on. The index values can be redfined, and the array can have multple identical objects. Objects in an aray are mutable 
+Obejects are accessed or called with corresponding index. 
 
 3.	Example of appropirate arrays:
 
@@ -13,8 +14,12 @@ entrees ["Scallop_Riso", "Lamb_Shank", "Gueinea_Hen_Confit"]
 
 
 4. Define "hash" and describe the characteristics of a hash.
+uses key to acces item. 
+Access values and data by accesing keys or symbols. 
 
 5. Give two original examples of data sets that a hash might be well-suited for.
+The menu of a chinese restaurant where the menu is divided into sub categories and within in each section there might be gluten gree options or spicy dishes. 
+
 
 6. Why is iteration useful?
 
