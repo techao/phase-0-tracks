@@ -8,14 +8,17 @@
 # 
 
 
+
+
+alias = {}
+
 puts "What is your first name?"
-first_name = "#{gets.chomp}".split('')
-
+alias[:firstname] => gets.chomp 
 puts "What is your last name?"
-last_name = "#{{gets.chomp}}".split('')
+alias[:lastname:] = gets.chomp
 
-full_name = first_name + last_name
-fullname.spilt('')
+
+
 fullname.class
 
 
