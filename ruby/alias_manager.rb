@@ -9,19 +9,24 @@
 
 
 puts "What is your first name?"
-first_name = gets.chomp
+first_name = "#{gets.chomp}".split('')
 
 puts "What is your last name?"
-last_name = gets.chomp
+last_name = "#{{gets.chomp}}".split('')
 
-fullname = first_name + last_name
+full_name = first_name + last_name
+fullname.spilt('')
+fullname.class
 
 
 
+fullname.map! {|fullname| fullname }
 
-aeiou
+
+#split the name into individual character strings using .chars method
+
+vowels = "aeiou"
 
 # while also doing the same with the consants.
 
-bcdfghjklmnpqrstvwxz
-
+vowels = "bcdfghjklmnpqrstvwxz!!
