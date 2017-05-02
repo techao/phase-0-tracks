@@ -15,20 +15,20 @@ def alias_maker(fullname)
 # here name becomes 2 string items in an array
 	name_arr.reverse! 
 # then strings are reversed and essentially swaped
-
-	
+	fullname = name_arr.join
+# Merges strings 
+	fullname.gsub!(/[aeiou]/ 
+		'a' => 'e'
+		'e' => 'i'
+		'i' => 'o'
+		'o' => 'u'
+		'u' => 'a'
+		)
+# vowels are replaced with following next vowel in list
 	fullname.class
 	
 end
 
-name = 
-
-puts "What is your first name?"
-name[firstname:] = gets.chomp 
-puts "What is your last name?"
-name[lastname:] = gets.chomp
-
-fullname = name[:firstname] + name[:lastname]
 
 fullname.class
 
