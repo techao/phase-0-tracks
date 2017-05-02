@@ -9,7 +9,14 @@
 
 
 def alias_maker(fullname)
-	fullname.split('')
+
+
+	name_arr = fullname.split(' ')
+# here name becomes 2 string items in an array
+	name_arr.reverse! 
+# then strings are reversed and essentially swaped
+
+	
 	fullname.class
 	
 end
