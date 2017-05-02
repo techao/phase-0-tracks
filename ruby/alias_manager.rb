@@ -17,7 +17,7 @@ def alias_maker(fullname)
 # Merges strings 
 	fullname = name_arr.join
 # vowels are replaced with following next vowel in list
-	fullname.gsub!(/[aeiou]/ 
+	alias_name = fullname.gsub(/[aeiou]/, 
 		'a' => 'e'
 		'e' => 'i'
 		'i' => 'o'
@@ -25,9 +25,9 @@ def alias_maker(fullname)
 		'u' => 'a'
 		)
 
-
-
-	fullname.class
+consonant = "bcdfghjklmnpqrstvwxyzb"
+# Replace consoannts
+alias_name.split('')
 
 
 	
@@ -47,4 +47,3 @@ vowels = "aeiou"
 
 # while also doing the same with the consants.
 
-vowels = "bcdfghjklmnpqrstvwxz!!
