@@ -35,7 +35,11 @@ alias_name.gsub!(/[bcdfghjklmnpqrstvwxyz]/,
 )
 end
 
-	
+puts "What is your full name? (include space)"
+fullname = gets.chomp
+
+alias_maker(fullname)
+
 
 
 
