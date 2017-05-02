@@ -42,7 +42,8 @@ alias_maker(fullname)
 
 
 
-
+# need to downsize lines 21 - 36 and replace with 
+# additional methods 
 
 
 
