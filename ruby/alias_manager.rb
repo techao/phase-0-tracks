@@ -10,13 +10,13 @@
 
 def alias_maker(fullname)
 
-
-	name_arr = fullname.split(' ')
 # here name becomes 2 string items in an array
-	name_arr.reverse! 
+	name_arr = fullname.split(' ')
 # then strings are reversed and essentially swaped
-	fullname = name_arr.join
+	name_arr.reverse! 
 # Merges strings 
+	fullname = name_arr.join
+# vowels are replaced with following next vowel in list
 	fullname.gsub!(/[aeiou]/ 
 		'a' => 'e'
 		'e' => 'i'
@@ -24,8 +24,12 @@ def alias_maker(fullname)
 		'o' => 'u'
 		'u' => 'a'
 		)
-# vowels are replaced with following next vowel in list
+
+
+
 	fullname.class
+
+
 	
 end
 
