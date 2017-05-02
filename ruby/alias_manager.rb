@@ -8,21 +8,24 @@
 # 
 
 
+def alias_maker(fullname)
+	fullname.split('')
+	fullname.class
+	
+end
 
-
-name = {
-}
+name = 
 
 puts "What is your first name?"
-name[:firstname] = gets.chomp 
+name[firstname:] = gets.chomp 
 puts "What is your last name?"
-name[:lastname] = gets.chomp
+name[lastname:] = gets.chomp
 
-
+fullname = name[:firstname] + name[:lastname]
 
 fullname.class
 
-
+# words.reverse_each { |word| str += "#{word} " }
 
 fullname.map! {|fullname| fullname }
 
