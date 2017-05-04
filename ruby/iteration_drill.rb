@@ -7,19 +7,50 @@ zombie_apocalypse_supplies = ["hatchet", "rations", "water jug", "binoculars",
 # printing each item in the array separated by an asterisk
 # ----
 
+zombie_apocalypse_supplies.each {|a| print a + '*', ''}
+
 # 2. In order to keep yourself organized, sort your zombie_apocalypse_supplies
 # in alphabetical order. Do not use any special built-in methods.
 # ----
 
+zombie_apocalypse_supplies.sort { |a, b| a.upcase <=> b.upcase }
+
+def	alpha_sort(supplies)
+supplies.each_index do |first|
+  (first + 1...supplies.length).each do |second|
+    if supplies[first] > supplies[second]
+      supplies[first], supplies[second] = supplies[second], supplies[first]
+      end
+    end
+  end
+end
+
 # 3. Create a method to see if a particular item (string) is in the
 # zombie_apocalypse_supplies. Do not use any special built-in methods.
 # For instance: are boots in your list of supplies?
+
+def supply_check(item, list)
+  list.each do |listItem|
+    if item == listItem
+      return true
+    end
+  end
+return false
+end
+
+boot = "boots"
+supply_check(boot, zombie_apocalypse_supplies)
+
 # ----
 
 # 4. You can't carry too many things, you've only got room in your pack for 5.
 # Remove items in your zombie_apocalypse_supplies in any way you'd like,
 # leaving only 5. Do not use any special built-in methods.
 # ----
+
+zombie_apocalypse_supplies.delete_at(0)
+
+
 
 # 5. You found another survivor! This means you can combine your supplies.
 # Create a new combined supplies list out of your zombie_apocalypse_supplies
@@ -29,6 +60,8 @@ zombie_apocalypse_supplies = ["hatchet", "rations", "water jug", "binoculars",
 other_survivor_supplies = [ "warm clothes", "rations", "compass", "camp stove",
                             "solar battery", "flashlight"]
 # ----
+
+comb_supplies = (zombie_apocalypse_supplies + other_survivor_supplies).uniq
 
 # Hash Drills
 
@@ -46,10 +79,16 @@ extinct_animals = {
 # with a dash in between the key and value, and an asterisk between each pair.
 # ----
 
+extinct_animals.each {|key, value| print "#{key} - #{value}" + " * "}
+
+
 # 2. Keep only animals in extinct_animals if they were extinct before
 # the year 2000. Do not use any special built-in methods.
 # ----
 
+extinct_animals.delete_if {|key, value| value >= 2000}
+
+....
 # 3. Our calculations were completely off, turns out all of those animals went
 # extinct 3 years before the date provided. Update the values in extinct_animals
 # so they accurately reflect what year the animal went extinct.
