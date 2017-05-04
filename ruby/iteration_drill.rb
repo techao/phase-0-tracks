@@ -12,6 +12,9 @@ zombie_apocalypse_supplies.each {|a| print a + '*', ''}
 # 2. In order to keep yourself organized, sort your zombie_apocalypse_supplies
 # in alphabetical order. Do not use any special built-in methods.
 # ----
+
+zombie_apocalypse_supplies.sort { |a, b| a.upcase <=> b.upcase }
+
 def	alpha_sort(supplies)
 supplies.each_index do |first|
   (first + 1...supplies.length).each do |second|
@@ -44,6 +47,7 @@ supply_check(boot, zombie_apocalypse_supplies)
 # Remove items in your zombie_apocalypse_supplies in any way you'd like,
 # leaving only 5. Do not use any special built-in methods.
 # ----
+
 zombie_apocalypse_supplies.delete_at(0)
 
 
@@ -82,8 +86,9 @@ extinct_animals.each {|key, value| print "#{key} - #{value}" + " * "}
 # the year 2000. Do not use any special built-in methods.
 # ----
 
+extinct_animals.delete_if {|key, value| value >= 2000}
 
-
+....
 # 3. Our calculations were completely off, turns out all of those animals went
 # extinct 3 years before the date provided. Update the values in extinct_animals
 # so they accurately reflect what year the animal went extinct.
