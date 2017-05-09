@@ -1,3 +1,6 @@
+def vamp_detect 
+
+
 puts "What is your name?"
   emp_name = gets.chomp
 
@@ -17,11 +20,9 @@ puts "Would you like to enroll in our health insurance?(y or n)"
 if 2017 - birth_year == emp_age
   age_match = true
 end
-
 if order_garlic == "y"
   like_garlic = true
 end
-
 if buy_ins == "y"
   health_ins = true
 end
@@ -43,6 +44,4 @@ case
     puts "Inconclusive results"
 end
 
-
-
-
+end 
