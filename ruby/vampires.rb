@@ -13,14 +13,22 @@ puts "Would you like us to order you garlic bread from the cafe? (y or n)"
 puts "Would you like to enroll in our health insurance?(y or n)"
   health_ins = gets.chomp
 
-if birth_year - 2017 = emp_age
-  age_match - true
+if 2017 - birth_year == emp_age
+  emp_age = true
+else
+  emp_age = false
 end
 
 if like_garlic == "y"
   like_garlic = true
 else
   like_garlic = false
+end
+
+if health_ins == "y"
+  health_ins = true
+else
+  health_ins = false
 end
 
 
