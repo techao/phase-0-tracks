@@ -31,5 +31,20 @@ else
   health_ins = false
 end
 
+# do the thing
+
+case 
+when emp_age && (like_garlic || health_ins)  
+  "Probably not a vampire."
+when !emp_age && (!like_garlic || !health_ins) 
+ "Probably a vampire."
+when !emp_age && (!like_garlic &&  !health_ins)
+ "Almost certainly a vampire."
+when emp_name == "Drake Cula" or "Tu Fang" 
+ "Definitely a vampire."
+else 
+  "Results inconclusive "
+end
+
 
 
