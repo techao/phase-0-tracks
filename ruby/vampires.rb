@@ -15,7 +15,18 @@ def vamp_detect
       order_garlic = gets.chomp
     puts "Would the employee like to enroll in our health insurance?(y or n)"
       buy_ins = gets.chomp
- 
+    puts "Does the employee have any allergies? (Type done if none)"
+      allergy = gets.chomp.to_s
+      if allergy = "sunshine"
+        puts "Probably a vampire"
+        break
+      else
+        until allergy == "done"
+          puts "Anything else worth mentioning? (Type done when nothing else to mention) "
+          allergy = gets.chomp.to_s
+        end
+      end
+
     if 2017 - birth_year == emp_age
       age_match = true end
     if order_garlic == "y"
