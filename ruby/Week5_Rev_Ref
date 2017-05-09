@@ -22,10 +22,17 @@ The menu of a chinese restaurant where the menu is divided into sub categories a
 
 
 6. Why is iteration useful?
+Allows for the ability to go through arrays or hashes and checking each item, element, key, value, etc for certain conditions. Lets coder run a program/ block of code  with each item in a collection of items. 
+
+
 
 7. Give an example of a real-life task that would require iteration if you wrote an algorithm for it.
+Looking for a specfic name in a very large guestlist. 
 
 
 8. What is a block?
 
+
 9. What is a block parameter, and where does its value come from?
+
+
