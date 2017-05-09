@@ -2,35 +2,38 @@
 
 Assuming default program is to follow the owner. 
 
-(assuming there is a visual component to robot and that it recognizes human-symbols)
+(The following psuedocode assumes there is a visual component to the hypotehtical robot and that it recognizes human-symbols, has button pushing capabilities, undersatnds voice commands, and already follows its master.)
 
-Everytime owner comes to a complete stop of 1.4 seconds and
-	elevator door is detected within 128 cm or less.
-	
-	Enter Elevator routine {
-	Ask master if we are taking the elevator
+
+If elevator doors are detected when scanning a room. 
+
+Initiate Elevator routine {
+	Ask master/owner if we are taking the elevator
+	initiate ask_counter
 	"Will we be taking the elevator?"
-	Wait for answer
-	Ask again after 2 seconds if no response.
-	Wait for answer.
-	Repeat after 10 seconds
 
-	If answer is no
-		- terminate and exit elevetor routine
-	If answer is Yes
-		Locate button(s) for elevator
-
-
-Ask master if master would like to go up or down
-		"Would you like to go up or down"
-			wait for response from master.
-If only 1 button
-	push button
-If number of buttons is gretear than 1 and answer is 'up'
-	Locate button poiting up and push.
-If number of buttons is greater than 1 and answer is 'down'
-	Locate button pointing down and push.}
-
+		If answer is no
+			- terminate/exit elevetor routine/ jump out of routine.
+		If answer is Yes
+			-Locate button(s) for elevator
+			(assumes that robot recognizes a button)
+			jump out of current routine and jump into use_elevator_routine
+		If no answer.
+			-until the question is asked 3 times
+			-Wait for answer, add 1 to ask_counter
+			-if 2 seconds has passed and no answer was given 
+			-Ask again, and add 1 to ask_counter
+	
+	use_elevator_routine
+			-If only 1 buttoon, push button
+			-If number of buttons is gretear than 1 
+				Ask master if master would like to go up or down: "Would 
+				you like to go up or down"
+				Wait for input.
+				-If input is "up"
+				Locate button poiting up and push.
+				-If input is "down"
+				Located button pointing down and push. 
 
 For every occurence of entering an elevator with owner
 	-Turn around 180 degrees to face the button pannel.
@@ -40,7 +43,6 @@ For every occurence of entering an elevator with owner
 	-Press button when located. 
 
 
-
 (In case roboto does not recognize Human symbols and numbers, that would suck btw.)
 
 For every occurence of entering an elevator with owner
@@ -48,26 +50,35 @@ For every occurence of entering an elevator with owner
 	-Ask for the floor the human-master would like to go to.
 	"What floor would you like to go to"
 	Wait for answer. 
-	-Ask for the row and column of the floor button.
+	-Ask for the column and row of the floor button.
 	"What row and column is that floor button located?"
 	Wait for asnwer.
 Count number of buttons acrross and down starting from the very top left buttong until the matching button is reached.
 Push corresponding button. 
 
 
-Common Task - Starting the Carq
+Common Task - Deciding to drive somewhere.
 
--Open driver-side door.
+
+
+Bring up last memory of where car is located.
+Move in that direction.
+Locate car.
+Go to driver side door.
+Open driver-side door.
 -Enter car and sit in driver-side seat.
--Put on seat belt
+-Put on seat belt.
 -Use left foot to step on and release manual break.
 
 -Press on break with right foot, hold.
--Use right hand to press start button located right of the steering wheel.
--Realse right foot from break.
--Use right hand to move shifter to engage or dirve or reverse.
+	-Use right hand to press start button located right of the steering wheel.
+-Release right foot from break.
+-Use right hand to move shifter to engage into dirve or reverse mode.
 
 -Begin driving. 
+
+
+
 
 
 
