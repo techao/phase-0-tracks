@@ -1,19 +1,19 @@
 def vamp_detect 
 
 
-puts "What is your name?"
+puts "What is the employee's name?"
   emp_name = gets.chomp
 
-puts "How old are you?"
+puts "How old is the employee"
   emp_age = gets.chomp.to_i
 
-puts "What year were you born"
+puts "What year was the employee born"
   birth_year = gets.chomp.to_i
 
-puts "Would you like us to order you garlic bread from the cafe? (y or n)"
+puts "Would the employee like us to order them garlic bread from the cafe? (y or n)"
   order_garlic = gets.chomp
 
-puts "Would you like to enroll in our health insurance?(y or n)"
+puts "Would the employee like to enroll in our health insurance?(y or n)"
   buy_ins = gets.chomp
 
 
