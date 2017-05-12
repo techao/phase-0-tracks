@@ -1,79 +1,54 @@
-puts "How many employees will be processed?"
-number_of_employees = gets.chomp.to_i
+def vamp_detect 
+  puts "How many employees will you be processing?"
+    count = 0
+    employee_count = gets.chomp.to_i
 
-until number_of_employees == 0 
+  until count == employee_count
 
-  puts "What is your name?"
-    suspect_name = gets.chomp
-  puts "How old are you?"
-    suspect_age = gets.chomp.to_i
-  puts "What year were you born?"
-    birth_year = gets.chomp.to_i
-  
-  case suspect_age
-  when suspect_age == (2017 - birth_year)
-    age_match = true
-  when suspect_age != (2017 - birth_year)
-  	age_wrong = true
-  else suspect_age != (Integer)
-    bad_data = true
-  end
-  
-  puts "Our company cafeteria serves garlic bread. Should we order some for you? (yes or no)"
-  garlic_bread = gets.chomp
-  
-  	if garlic_bread ==  "yes"
-  		likes_garlic = true
-  	elsif garlic_bread == "no"
-  		dislikes_garlic = true
-  	else 
-  	  bad_data = true 
-  	end
-
-  puts "Would you like to enroll in the company's health insurance? (yes or no)"
-    health_insurance =  gets.chomp
-  
-  	if health_insurance == "yes"
-  		wants_insurance = true
-  	elsif health_insurance == "no"
-  		waives_insurance  = true
-  	else
-  	  bad_data = true
-  	end
-
- 
-   puts "Please name any allergies you might have. You may enter 'done' when you are finished."
-   allergy_input = gets.chomp
-   
-while allergy_input != "done"
-      if allergy_input == "sunshine"
-        p "Probably a vampire."
-      break
-    else allergy_input = ""
-         puts "any more allergies"
-      allergy_input = gets.chomp
+    puts "What is the employee's name?"
+      emp_name = gets.chomp
+    puts "How old is the employee"
+      emp_age = gets.chomp.to_i
+    puts "What year was the employee born"
+      birth_year = gets.chomp.to_i
+    puts "Would the employee like us to order them garlic bread from the cafe? (y or n)"
+      order_garlic = gets.chomp
+    puts "Would the employee like to enroll in our health insurance?(y or n)"
+      buy_ins = gets.chomp
+    puts "Does the employee have any allergies? (Type done if none)"
+      allergy = gets.chomp.to_s
+      if allergy = "sunshine"
+        puts "Probably a vampire"
+        break
+      else
+        until allergy == "done"
+          puts "Anything else worth mentioning? (Type done when nothing else to mention) "
+          allergy = gets.chomp.to_s
+        end
       end
-      next
-    end
-  
-  if suspect_name == "Drake Cula"
-    puts "Definitely a vampire!"
-  elsif 
-    suspect_name == "Tu Fang"
-    puts "Definitely a vampire!"
-  else
-    if age_match && (likes_garlic || wants_insurance)
-    	p "Probably not a vampire."
-    elsif age_wrong && (dislikes_garlic || waives_insurance)
-    	p "Probably a vampire."
-    elsif age_wrong && dislikes_garlic && waives_insurance
-  	  p "Almost certainly a vampires."
-    else bad_data
-      p "Inconclusive Results"
-    end
-  end
-  
-  number_of_employees = number_of_employees - 1
-end
 
-"Actually, never mind! What do these questions have to do with anything? Let's all be friends."
+    if 2017 - birth_year == emp_age
+      age_match = true end
+    if order_garlic == "y"
+      like_garlic = true end
+    if buy_ins == "y"
+      health_ins = true end
+
+    case 
+      when emp_name == "Drake Cula" 
+        puts "Definitely a vampire."
+      when emp_name == "Tu Fang"
+        puts "Definitely a vampire."
+      when !age_match && !like_garlic && !health_ins
+        puts "Almost certainly a vampire."
+      when age_match && (like_garlic || health_ins)  
+        puts "Probably not a vampire."
+      when !age_match && (!like_garlic || !health_ins) 
+        puts "Probably a vampire."
+      else
+        puts "Inconclusive results"
+    end
+    count += 1
+  end 
+  puts "Actually, never mind! What do these questions have to do with anything? Let's all be friends."
+end 
