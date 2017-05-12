@@ -47,3 +47,7 @@ design_proj= {
 	reason:""
 }
 
+# forgot that i dont need to define the elements in the array.
+# can be added through user interface.
+
+
