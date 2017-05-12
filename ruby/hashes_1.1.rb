@@ -22,14 +22,28 @@
 # prompt user for age of client
 # prompt user of potential client type
 # (single house, family, double occupancy)
-# prompt user for type of building potential client is residing in
+# prompt user for type of building potential-client is residing in
 # prompt user for number of children present in household?
 # prompt user for number of windows
 # promt  user for number of stories or floors.
 # prompt user for numebr of  roooms in poten clients house
 # prompt user for number of sqft that the project will oversee *approx.
 # prompt user for budget including design team fees
-# prompt user for reason for remodeling/new design
+# prompt user for reason for remodeling/new design given options
+# ==>(personal, sell property)
 
 
+design_proj= {
+	name: ""
+	age: ""
+	type: ""
+	building: ""
+	window_count: ""
+	stories:""
+	room_count: ""
+	chilldren: ""
+	space_size:""
+	budget: ""
+	reason:""
+}
 
