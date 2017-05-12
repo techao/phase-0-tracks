@@ -50,4 +50,10 @@ design_proj= {
 # forgot that i dont need to define the elements in the array.
 # can be added through user interface.
 
+puts "Please enter name of client."
+design_proj=[:name] = gets.chomp
 
+puts "Enter age of client."
+design_proj = [:age] = gets.chomp
+
+# puts "Enter type of client(.."
