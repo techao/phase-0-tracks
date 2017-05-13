@@ -20,10 +20,10 @@
 
 # prompt user for name of clent
 # prompt user for age of client
-# prompt user of potential client type
+
 # (single house, family, double occupancy)
 # prompt user for type of building potential-client is residing in
-# prompt user for number of children present in household?
+# 
 # prompt user for number of windows
 # promt  user for number of stories or floors.
 # prompt user for numebr of  roooms in poten clients house
@@ -36,12 +36,12 @@
 design_proj= {
 	name: ""
 	age: ""
-	type: ""
+
 	building: ""
 	window_count: ""
 	stories:""
 	room_count: ""
-	chilldren: ""
+	
 	space_size:""
 	budget: ""
 	reason:""
@@ -51,9 +51,32 @@ design_proj= {
 # can be added through user interface.
 
 puts "Please enter name of client."
-design_proj=[:name] = gets.chomp
+design_proj[:name] = gets.chomp
 
 puts "Enter age of client."
-design_proj = [:age] = gets.chomp
+design_proj[:age] = gets.chomp
+
+puts "Enter the type of buildig."
+design_proj[:building] = gets.chomp
+
+puts "Enter the number of windows."
+design_proj[:window_count] = gets.chomp
+
+puts "Enter the number of stories."
+design_proj[:stories] = gets.chomp
+
+puts "Enter the number of rooms the proposed project will include"
+design_proj[:room_count] = gets.chomp
+
+puts "Enter the the aproximate square footage of the proposed proect space."
+design_proj[:space_size] =. gets.chomp
+
+puts "Enter the estiamted budget of the client."
+design_proj[:budget] = gets.chomp 
+
+puts "Enter the clients purpose for project"
+design_proj[:reason] = gets.chomp.to_s
 
 # puts "Enter type of client(.."
+
+
