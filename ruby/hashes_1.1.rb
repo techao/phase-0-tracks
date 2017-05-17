@@ -51,31 +51,31 @@ design_proj= {
 # can be added through user interface.
 
 puts "Please enter name of client."
-design_proj[:name] = gets.chomp
+design_proj[:name] = gets.chomp.to_str
 
 puts "Enter age of client."
-design_proj[:age] = gets.chomp
+design_proj[:age] = gets.chomp.to_i
 
 puts "Enter the type of buildig."
-design_proj[:building] = gets.chomp
+design_proj[:building] = gets.chomp.to_str
 
 puts "Enter the number of windows."
-design_proj[:window_count] = gets.chomp
+design_proj[:window_count] = gets.chomp.to_i
 
 puts "Enter the number of stories."
-design_proj[:stories] = gets.chomp
+design_proj[:stories] = gets.chomp.to_i
 
 puts "Enter the number of rooms the proposed project will include"
-design_proj[:room_count] = gets.chomp
+design_proj[:room_count] = gets.chomp.to_i
 
 puts "Enter the the aproximate square footage of the proposed proect space."
-design_proj[:space_size] =. gets.chomp
+design_proj[:space_size] =. gets.chomp.to_i
 
 puts "Enter the estiamted budget of the client."
-design_proj[:budget] = gets.chomp 
+design_proj[:budget] = gets.chomp.to_i 
 
 puts "Enter the clients purpose for project"
-design_proj[:reason] = gets.chomp.to_s
+design_proj[:reason] = gets.chomp.to_srt
 
 # puts "Enter type of client(.."
 
