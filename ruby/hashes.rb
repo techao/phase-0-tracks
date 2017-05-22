@@ -38,12 +38,10 @@
 design_proj= {
 	name: ""
 	age: ""
-
 	building: ""
 	window_count: ""
 	stories:""
 	room_count: ""
-	
 	space_size:""
 	budget: ""
 	reason:""
@@ -76,7 +74,7 @@ puts "Enter the estiamted budget of the client."
 design_proj[:budget] = gets.chomp.to_i 
 
 puts "Enter the clients purpose for project"
-design_proj[:reason] = gets.chomp.to_srt
+design_proj[:reason] = gets.chomp.to_str
 
 # puts "Enter type of client(.."
 
