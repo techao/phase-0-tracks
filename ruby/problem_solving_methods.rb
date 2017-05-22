@@ -31,6 +31,22 @@ def search_array(arr, x)
 		index += 1
 	end	
 end
+# -------------------------
 
 
+
+def fib(x)
+  # index = 1
+	fib = [0,1]
+	while fib.length < x 
+		fib << fib.last + fib[-2]
+	end
+# 	index += 1
+return fib.last
+	
+end
+
+p fib(100)
+
+# didnt need index
 
