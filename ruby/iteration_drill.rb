@@ -48,7 +48,18 @@ supply_check(boot, zombie_apocalypse_supplies)
 # leaving only 5. Do not use any special built-in methods.
 # ----
 
-zombie_apocalypse_supplies.delete_at(0)
+def supply_count(s)
+  while s.length >= 5
+    s.delete(s[-1])
+  end
+end
+
+# or
+
+until zombie_apocalypse_supplies.length <= 5
+  zombie_apocalypse_supplies.delete(zombie_apocalypse_supplies[-1])
+end
+
 
 
 
