@@ -1,5 +1,4 @@
 
-
 # prompt user for name
 # prompt user for address
 # prompt user for email
@@ -67,6 +66,7 @@ design_proj[:stories] = gets.chomp.to_i
 
 puts "Enter the number of rooms the proposed project will include"
 design_proj[:room_count] = gets.chomp.to_
+
 puts "Enter the the aproximate square footage of the proposed proect space."
 design_proj[:space_size] =. gets.chomp.to_i
 
