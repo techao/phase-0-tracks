@@ -1,0 +1,39 @@
+1.	Data structures are useful in programming for accessing large amounts of data that can be grouped together. 
+
+2.	An array a collection of objects, that can be seen represented as a vriable with multple vlaues. The collection objects are indexed, meaning the first value within the brakcets, '[]' is index 0 and so on. The index values can be redfined, and the array can have multple identical objects. Objects in an aray are mutable 
+Obejects are accessed or called with corresponding index. 
+
+3.	Example of appropirate arrays:
+
+Name of students in a particular class:
+student_names ["Mikey", "Rachel", "Tony", "Tony S.", "Tiffany", "Ashley", "etc" ]
+
+Menu Items of a particular category:
+entrees ["Scallop_Riso", "Lamb_Shank", "Gueinea_Hen_Confit"]
+
+
+
+4. Define "hash" and describe the characteristics of a hash.
+uses key to acces item. 
+Access values and data by accesing keys or symbols. 
+
+5. Give two original examples of data sets that a hash might be well-suited for.
+The menu of a chinese restaurant where the menu is divided into sub categories and within in each section there might be gluten gree options or spicy dishes. 
+
+
+6. Why is iteration useful?
+Allows for the ability to go through arrays or hashes and checking each item, element, key, value, etc for certain conditions. Lets coder run a program/ block of code  with each item in a collection of items. 
+
+
+
+7. Give an example of a real-life task that would require iteration if you wrote an algorithm for it.
+Looking for a specfic name in a very large guestlist. 
+
+
+8. What is a block?
+ A method within another method that grabs the data from the enclosing method.
+
+
+9. What is a block parameter, and where does its value come from?
+It is the variable that is being taken in by the method that is being called. The value of the variable is dependent on the method the block is associated with.
+
