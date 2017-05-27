@@ -1,15 +1,19 @@
-breed -----------
-Huskey /  Pomeranian
+# Puppy class
 
-Physical Traits  -----------
-coat / fur color: "grey & white" 
-size: small 
-weight: 16lbs
-Ears: pointy
-face: narrow 
-tail: short
+# breed --------------
+# Huskey /  Pomeranian
 
-Personlity/Demaonor
-temperment: friendly 
-energy level: high
-barks: moderately 
+# Physical Traits  --------------
+# coat / fur color: "grey & white" 
+# size: small 
+# weight: 16lbs
+# Ears: pointy
+# face: narrow 
+# tail: short
+
+# Personlity/Demaonor------------
+# temperment: friendly 
+# energy level: high
+
+
+
