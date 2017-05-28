@@ -13,7 +13,10 @@ rover.fetch("ball")
 		speak(many_times.to_i)
 		puts "Woof" * many_times
 	end
-
+	
+	def roll_over
+		puts "rolls over"
+	end
 
 
 
