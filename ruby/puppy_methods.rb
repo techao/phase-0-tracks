@@ -7,3 +7,5 @@ class Puppy
 
 end
 
+rover = Puppy.new
+rover.fetch("ball")
