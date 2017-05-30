@@ -44,28 +44,34 @@ rover.dog_years(4)
 
 
 class Foodprep
-	def chop
-		puts "chopping ingredints"
-	end
-
 	def peel
 		puts "peels ingredients"
 	end
 
+	def cuts
+		puts "chops ingredints"
+	end
+
 	def boil
-		puts "boils ingredient2"
+		puts "boils ingredients"
 	end
 end
 
-	
+
 	prep = []
 	index  =  0	
-
-while index <= 50
-	  prepper = Foodprep.new
-	  prep << prepper
+while 
+	index <= 50
+	 prep << Foodprep.new 
 	index += 1
 end
+
+prep.each do |prepper|
+	prepper.peel
+	prepper.cuts
+	prepper.boil
+end
+
 
 
 # methods route...
