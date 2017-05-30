@@ -46,12 +46,10 @@ rover.dog_years(4)
 class Foodprep
 	def chop
 		puts "chopping ingredints"
-		ingredient
 	end
 
 	def peel
 		puts "peels ingredients"
-		ingredient1
 	end
 
 	def boil
@@ -64,10 +62,13 @@ end
 	index  =  0	
 
 while index <= 50
-	 prep << Foodprep.new
+	  perpper = Foodprep.new
+	  prep << perpper
 	index += 1
 end
 
-# prep = Array.new(50, Foodprep.new)
+
+# methods route...
+# prep = Array.new(50) {Foodprep.new}
 
 
