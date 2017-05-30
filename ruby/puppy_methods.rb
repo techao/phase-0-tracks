@@ -18,6 +18,8 @@ rover.fetch("ball")
 		puts "rolls over"
 	end
 
+
+
 	def dog_years(h_age)
 		if h_age.to_i < 0
 			print "Age must be positive number."
@@ -28,6 +30,10 @@ rover.fetch("ball")
 		end
 		print "The dog's age in dog's years is, #{d_age}"
 	end 
+
+	def play_dead
+		puts "plays dead"	
+	end
 
 end
 
