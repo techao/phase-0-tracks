@@ -29,6 +29,10 @@ class Puppy
 		puts "plays dead"	
 	end
 
+	def initialize
+		print "Initializing new puppy instance ..."
+	end
+
 end
 
 
