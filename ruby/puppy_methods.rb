@@ -62,8 +62,8 @@ end
 	index  =  0	
 
 while index <= 50
-	  perpper = Foodprep.new
-	  prep << perpper
+	  prepper = Foodprep.new
+	  prep << prepper
 	index += 1
 end
 
