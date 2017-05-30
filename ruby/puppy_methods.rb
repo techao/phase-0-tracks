@@ -4,21 +4,15 @@ class Puppy
     puts "I brought back the #{toy}!"
     toy
   end
-end
-
-rover = Puppy.new
-rover.fetch("ball")
 
 	def 
-		speak(many_times.to_i)
-		puts "Woof" * many_times
+		speak(many_times)
+		puts "Woof" * many_times.to_i
 	end
 
 	def roll_over
 		puts "rolls over"
 	end
-
-
 
 	def dog_years(h_age)
 		if h_age.to_i < 0
@@ -38,4 +32,10 @@ rover.fetch("ball")
 end
 
 
+rover = Puppy.new
+rover.fetch("ball")
+rover.roll_over
+rover.play_dead
+
+rover.dog_years(4)
 
