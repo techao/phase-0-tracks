@@ -43,21 +43,31 @@ rover.dog_years(4)
 
 
 
-class foodprep
-	def chop(ingredient)
-		puts "chops #{ingredient}"
+class Foodprep
+	def chop
+		puts "chopping ingredints"
 		ingredient
 	end
 
-	def peel(ingredient1)
-		puts "peels #{ingredient1}"
+	def peel
+		puts "peels ingredients"
 		ingredient1
 	end
 
-	def boil(ingredient2)
-		puts "boils #{ingredient2}"
+	def boil
+		puts "boils ingredient2"
 	end
 end
 
+	
+	prep = []
+	index  =  0	
+
+while index <= 50
+	 prep << Foodprep.new
+	index += 1
+end
+
+# prep = Array.new(50, Foodprep.new)
 
 
