@@ -35,11 +35,29 @@ class Puppy
 
 end
 
-
 rover = Puppy.new
 rover.fetch("ball")
 rover.roll_over
 rover.play_dead
-
 rover.dog_years(4)
+
+
+
+class foodprep
+	def chop(ingredient)
+		puts "chops #{ingredient}"
+		ingredient
+	end
+
+	def peel(ingredient1)
+		puts "peels #{ingredient1}"
+		ingredient1
+	end
+
+	def boil(ingredient2)
+		puts "boils #{ingredient2}"
+	end
+end
+
+
 
