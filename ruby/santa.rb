@@ -11,7 +11,7 @@ def greetings
 end
 
 def eat_milk_and_cookies(cookie)
- puts "That was a a good #{cookie}!"
+ puts "That was a good #{cookie} cookie!"
 end
 
 def initialize
@@ -19,3 +19,9 @@ def initialize
 end
 
 end
+
+rob = Santa.new
+rob.greetings
+rob.eat_milk_and_cookies('oatmeal')
+
+
