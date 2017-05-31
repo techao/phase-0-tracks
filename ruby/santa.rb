@@ -38,6 +38,7 @@ rob.eat_milk_and_cookies('oatmeal')
 santas = []
 genders = ["agender", "female", "bigender", "male", "female", "gender fluid", "N/A"]
 ethnicities = ["black", "Latino", "white", "Japanese-African", "prefer not to say", "Mystical Creature (unicorn)", "N/A"]
+
 genders.length.times do |i|
   santas << Santa.new(genders[i], ethnicities[i])
 end
