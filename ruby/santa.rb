@@ -3,8 +3,19 @@
 # An initialize method that prints "Initializing Santa instance ...".
 
 
+# Update your Santa class with the following attributes:
+
+# gender, which will be a string passed in on initialization
+# ethnicity, which will be a string passed  in on initialization
+# reindeer_ranking, an array of reindeer from most preferred to least preferred. This is not passed in on initialization; it simply gets a default value of ["Rudolph", "Dasher", "Dancer", "Prancer", "Vixen", "Comet", "Cupid", "Donner", "Blitzen"]
+# age, which is not passed in on initialization and defaults to 0
+
 
 class Santa
+
+def initialize
+	puts "Initializing Santa instance..."
+end
 
 def greetings
 	puts "Ho,ho, ho! Happy holidays!"	
@@ -14,9 +25,7 @@ def eat_milk_and_cookies(cookie)
  puts "That was a good #{cookie} cookie!"
 end
 
-def initialize
-	"Initializing Santa instance..."
-end
+
 
 end
 
