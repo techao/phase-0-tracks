@@ -1,4 +1,4 @@
-# Array Drills
+ # Array Drills
 
 zombie_apocalypse_supplies = ["hatchet", "rations", "water jug", "binoculars",
                               "shotgun", "compass", "CB radio", "batteries"]
@@ -20,7 +20,7 @@ supplies.each_index do |first|
   (first + 1...supplies.length).each do |second|
     if supplies[first] > supplies[second]
       supplies[first], supplies[second] = supplies[second], supplies[first]
-      end
+      end 
     end
   end
 end

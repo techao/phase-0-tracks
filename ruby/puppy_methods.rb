@@ -42,7 +42,6 @@ rover.play_dead
 rover.dog_years(4)
 
 
-
 class Foodprep
 	def peel
 		puts "peels ingredients"
@@ -56,7 +55,6 @@ class Foodprep
 		puts "boils ingredients"
 	end
 end
-
 
 	prep = []
 	index  =  0	
