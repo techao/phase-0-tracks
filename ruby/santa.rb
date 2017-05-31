@@ -16,6 +16,7 @@ def initialize(gender, ethnicity)
 	puts "Initializing Santa instance..."
 	@gender = gender
 	@ethniciti = ethnicity
+		@age = age = 0
 end
 
 def greetings
@@ -28,12 +29,18 @@ end
 
 reindeer_ranking = ["Rudolph", "Dasher", "Dancer", "Prancer", "Vixen", "Comet", "Cupid", "Donner", "Blitzen"]
 
-@age = age.to_i
-
 end
 
 rob = Santa.new
 rob.greetings
 rob.eat_milk_and_cookies('oatmeal')
+
+santas = []
+genders = ["agender", "female", "bigender", "male", "female", "gender fluid", "N/A"]
+ethnicities = ["black", "Latino", "white", "Japanese-African", "prefer not to say", "Mystical Creature (unicorn)", "N/A"]
+genders.length.times do |i|
+  santas << Santa.new(genders[i], ethnicities[i])
+end
+
 
 
