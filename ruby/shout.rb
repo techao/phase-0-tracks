@@ -13,7 +13,7 @@
 
 # Shout.yell_angrily('But now I have to pay texes on it')
 
-module Shout
+module Shout.friendly 
 	def yell_win(words)
 		words + " #FTW !!!" + '\_^0^_/'
 	end
@@ -33,6 +33,14 @@ module Shout
 	def yell_curse(words4)
 		'Oh yeah? Well...' + words4 + 'and !@#$%^&#$%^&*'
 	end
+end
+
+class player1
+	include Shout 
+end
+
+class player2
+	include Shout
 end
 
 
