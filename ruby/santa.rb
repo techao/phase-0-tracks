@@ -37,6 +37,13 @@ class Santa
 		reindeer_ranking.push(reindeer)
 	 end
 
+	def gender
+		@gender
+	 end
+
+	def gender=(new_gender)
+		@gender = new_gender
+	end
 end
 
 # Driver Code
