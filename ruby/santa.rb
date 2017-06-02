@@ -1,15 +1,15 @@
 class Santa
-	attr_reader :name, :age, :ethnicity, :reindeer_ranking
-	attr_accessor :gender
+	attr_reader :name, :ethnicity, :reindeer_ranking
+	attr_accessor :gender, :age
 	
 
-	def initialize(gender, ethnicity)
+	def initialize(gender, ethnicity, age)
 		puts "Initializing Santa instance..."
 		@gender = gender
 		@ethniciti = ethnicity
 		@age = age.to_i
 		@reindeer_ranking = ["Rudolph", "Dasher", "Dancer", "Prancer", "Vixen", "Comet", "Cupid", "Donner", "Blitzen"]
-	end
+	 end
 
 	def greetings
 		puts "Ho,ho, ho! Happy holidays!"	
@@ -17,6 +17,10 @@ class Santa
 
 	def eat_milk_and_cookies(cookie)
 		puts "That was a good #{cookie} cookie!"
+	 end
+
+	def age
+	 	@age = rand(140)
 	 end
 
 	def cel_bday
@@ -30,6 +34,15 @@ class Santa
 	 end
 end
 
+genders = ["agender", "female", "bigender", "male", "female", "gender fluid", "N/A"]
+ethnicities = ["black", "Latino", "white", "Japanese-African", "prefer not to say", "Mystical Creature (unicorn)", "N/A"]
+  index = 0
+  while index <=299
+  santa = Santa.new(genders.sample, ethnicities.sample)
+  santa.age
+  p santa
+  index +=1 
+  end
 
 
 
@@ -44,13 +57,6 @@ rob.get_mad_at("Vixen")
 rob.get_mad_at("Comet")
 
 
-
-santas = []
-genders = ["agender", "female", "bigender", "male", "female", "gender fluid", "N/A"]
-ethnicities = ["black", "Latino", "white", "Japanese-African", "prefer not to say", "Mystical Creature (unicorn)", "N/A"]
-genders.length.times do |i|
-  santas << Santa.new(genders[i], ethnicities[i])
-end
 
 
 
