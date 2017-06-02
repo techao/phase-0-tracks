@@ -13,36 +13,42 @@
 
 # Shout.yell_angrily('But now I have to pay texes on it')
 
-module Shout.friendly 
+module Shout 
 	def yell_win(words)
-		words + " #FTW !!!" + '\_^0^_/'
+		puts words + " #FTW !!!" + '\_^0^_/'
 	end
-
 	def yell_loss(words2)
-		words + "Aww well, there's always next time"
+		puts words + "Aww well, there's always next time"
 	end
-
 	def yell_pain(words3)
-		words3 + 'Owwwww Owww Owww Owww' + 'T__T'
+		puts words3 + 'Owwwww Owww Owww Owww' + 'T__T'
 	end
-
 	def yell_taunt
 			puts "You can't handle this"
 	end
-
 	def yell_curse(words4)
-		'Oh yeah? Well...' + words4 + 'and !@#$%^&#$%^&*'
+		puts 'Oh yeah? Well...' + words4 + 'and !@#$%^&#$%^&*'
+	end
+	def yell_sorry
+		puts "It was an accident!"
 	end
 end
 
-class player1
+class Player1 
 	include Shout 
 end
 
-class player2
+class Player2
 	include Shout
 end
 
+player1 = Player1.new
+player1.yell_taunt
 
+player2 = Player2.new 
+player2.yell_win('just watch me school you')
+
+player1.yell_pain('Easy with elbows!')
+player2.yell_sorry
 
 
