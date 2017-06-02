@@ -1,4 +1,5 @@
 class Santa
+	attr_reader :name, :age, :ethnicity, :gender, :reindeer_ranking
 
 	def initialize(gender, ethnicity)
 		puts "Initializing Santa instance..."
@@ -16,20 +17,8 @@ class Santa
 		puts "That was a good #{cookie} cookie!"
 	 end
 
-	def age
-   		@age 
-	 end
-
-	def ethnicity
-	  	@ethnicity
-	 end
-
 	def celebrate_bday
 	  	@age += 1
-	 end
-
-	def reindeer_ranking
-		@reindeer_ranking
 	 end
 
 	def get_mad_at(reindeer)
@@ -37,14 +26,13 @@ class Santa
 		reindeer_ranking.push(reindeer)
 	 end
 
-	def gender
-		@gender
-	 end
-
 	def gender=(new_gender)
 		@gender = new_gender
 	end
 end
+
+
+
 
 # Driver Code
 rob = Santa.new
