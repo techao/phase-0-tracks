@@ -1,5 +1,4 @@
-def vamp_detect 
-  puts "How many employees will you be processing?"
+   puts "How many employees will you be processing?"
     count = 0
     employee_count = gets.chomp.to_i
 
@@ -50,5 +49,7 @@ def vamp_detect
     end
     count += 1
   end 
-  puts "Actually, never mind! What do these questions have to do with anything? Let's all be friends."
-end 
+  p "Actually, never mind! What do these questions have to do with anything? Let's all be friends."
+
+
+
