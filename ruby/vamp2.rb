@@ -22,16 +22,30 @@ insurance = gets.chomp
 if 2017 - birth_year = vamp_age
 	age_matches = true 
 end
+
 if garlic_bread == "yes"
 	likes_garlic = true 
+elsif garlic_bread == "no"
+	likes_garlic = false
+else
+	likes_garlic = nil
 end
+
 if insurance == "yes"
-	health_insurance = true end
+	health_insurance = true 
+elsif insurance == "no"
+	health_insurance = false
+else
+	health_insurance = nil
+end
 
 
 case 
- when age_matches && (likes_garlic || health_insurance)  
+when age_matches && (likes_garlic || health_insurance)  
         puts "Probably not a vampire."
- when !age_match && !like_garlic && !health_ins
+when !age_matches && (!like_garlic || !health_ins) 
+        puts "Probably a vampire."
+else !age_matches && [!likes_garlic && !health_insurance]
         puts "Almost certainly a vampire."
+
 end
