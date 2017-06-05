@@ -19,6 +19,18 @@ until count == employee_count
 	puts "Would yout like to enroll in the company's health insurance? (yes or no)"
 	insurance = gets.chomp
 
+	puts "Does the employee have any allergies? (Type done if none)"
+      allergy = gets.chomp.to_s
+      if allergy = "sunshine"
+        puts "Probably a vampire"
+        break
+      else
+        until allergy == "done"
+          puts "Anything else worth mentioning? (Type done when nothing else to mention) "
+          allergy = gets.chomp.to_s
+        end
+      end
+
 	if 2017 - birth_year = vamp_age
 		age_matches = true 
 	end
@@ -55,4 +67,4 @@ until count == employee_count
 			puts "Inconclusive results."
 	end
 	count += 1
-	
+
