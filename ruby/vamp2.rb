@@ -67,4 +67,6 @@ until count == employee_count
 			puts "Inconclusive results."
 	end
 	count += 1
+end
+
 
