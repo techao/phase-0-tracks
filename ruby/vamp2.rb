@@ -32,4 +32,6 @@ if insurance == "yes"
 case 
  when age_matches && (likes_garlic || health_insurance)  
         puts "Probably not a vampire."
+ when !age_match && !like_garlic && !health_ins
+        puts "Almost certainly a vampire."
 end
