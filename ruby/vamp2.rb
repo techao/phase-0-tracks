@@ -20,10 +20,16 @@ insurance = gets.chomp
 # Otherwise, print “Results inconclusive.
 
 if 2017 - birth_year = vamp_age
-	age_matches = true end
-if garlic_bread
+	age_matches = true 
+end
+if garlic_bread == "yes"
+	likes_garlic = true 
+end
+if insurance == "yes"
+	health_insurance = true end
+
 
 case 
-when condition
-	
+ when age_matches && (likes_garlic || health_insurance)  
+        puts "Probably not a vampire."
 end
