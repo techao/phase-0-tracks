@@ -4,38 +4,39 @@
 # When there's more than one suspect who could have
 # committed the crime, add additional calls to prove it.
 
-"iNvEsTiGaTiOn".swapcase
-=> “InVeStIgAtIoN”
+puts "iNvEsTiGaTiOn".swapcase
+# => “InVeStIgAtIoN”
 
-"zom".insert(2, "o")
-=> “zoom”
+puts "zom".insert(2, "o")
+# => “zoom”
 
-"enhance".center(20)
-=> "    enhance    "
-
-
-"Stop! You’re under arrest!".upcase
-=> "STOP! YOU’RE UNDER ARREST!"
-
-"the usual" + " suspects"
-=> "the usual suspects"
-.to_s 
-
-"The case of the disappearing last letter".chop
-=> "The case of the disappearing last lette"
-.chomp
-.delete
+puts "enhance".center(20)
+# => "    enhance    "
 
 
-"The mystery of the missing first letter".delete "T"
-=> "he mystery of the missing first letter"
+puts "Stop! You’re under arrest!".upcase
+# => "STOP! YOU’RE UNDER ARREST!"
 
-"Elementary,    my   dear        Watson!".squeeze(" ")  
-=> "Elementary, my dear Watson!"
+puts "the usual" + " suspects"
+# => "the usual suspects"
+# .to_s 
 
-"z".ord
-=> 122
+puts "The case of the disappearing last letter".chop
+# => "The case of the disappearing last lette"
+# .chomp
+# .delete
+
+
+puts "The mystery of the missing first letter".delete "T"
+# => "he mystery of the missing first letter"
+
+puts "Elementary,    my   dear        Watson!".squeeze(" ")  
+# => "Elementary, my dear Watson!"
+
+puts "z".ord
+# => 122
 # it seems as though 122 just happens to be the character encoding for z
 
-"How many times does the letter 'a' appear in this string?".count "a"
-=> 4
+puts "How many times does the letter 'a' appear in this string?".count "a"
+# => 4
+
