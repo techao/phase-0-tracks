@@ -10,6 +10,7 @@ puts "iNvEsTiGaTiOn".swapcase
 puts "zom".insert(2, "o")
 # => “zoom”
 
+
 puts "enhance".center(20)
 # => "    enhance    "
 
@@ -19,15 +20,21 @@ puts "Stop! You’re under arrest!".upcase
 puts "the usual" + " suspects"
 # => "the usual suspects"
 
-puts "the usual" + " suspects".to_s
+puts "the usual" << " suspects"
+puts "the usual".insert(-1," suspects")
 
 puts "The case of the disappearing last letter".chop
 # => "The case of the disappearing last lette"
-# puts "The case of the disappearing last letter".slice!(1)
+puts "The case of the disappearing last letter".slice(0..-2)
+
+string = "The case of the disappearing last letter"
+string.slice!(-1)
+puts string
 
 puts "The mystery of the missing first letter".delete "T"
 # => "he mystery of the missing first letter"
 puts "The mystery of the missing first letter".slice(1..-1)
+
 string = "The mystery of the missing first letter"
 string.slice!(0)
 puts string
