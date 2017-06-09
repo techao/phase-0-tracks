@@ -28,7 +28,9 @@ puts "The case of the disappearing last letter".chop
 puts "The mystery of the missing first letter".delete "T"
 # => "he mystery of the missing first letter"
 puts "The mystery of the missing first letter".slice(1..-1)
-p "The mystery of the missing first letter".slice!(0)
+string = "The mystery of the missing first letter"
+string.slice!(0)
+puts string
 
 puts "Elementary,    my   dear        Watson!".squeeze(" ")  
 # => "Elementary, my dear Watson!"
