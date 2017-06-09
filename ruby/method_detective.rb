@@ -17,11 +17,13 @@ puts "enhance".center(20)
 puts "Stop! You’re under arrest!".upcase
 # => "STOP! YOU’RE UNDER ARREST!"
 
-puts "the usual" + " suspects"
+puts "the usual".replace "the usual suspects"
 # => "the usual suspects"
 
-puts "the usual" << " suspects"
 puts "the usual".insert(-1," suspects")
+puts "the usual" << " suspects"
+puts "the usual" + " suspects"
+
 
 puts "The case of the disappearing last letter".chop
 # => "The case of the disappearing last lette"
