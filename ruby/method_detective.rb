@@ -13,25 +13,26 @@ puts "zom".insert(2, "o")
 puts "enhance".center(20)
 # => "    enhance    "
 
-
 puts "Stop! You’re under arrest!".upcase
 # => "STOP! YOU’RE UNDER ARREST!"
 
 puts "the usual" + " suspects"
 # => "the usual suspects"
-# .to_s 
+
+puts "the usual" + " suspects".to_s
 
 puts "The case of the disappearing last letter".chop
 # => "The case of the disappearing last lette"
-# .chomp
-# .delete
 
 
 puts "The mystery of the missing first letter".delete "T"
 # => "he mystery of the missing first letter"
+puts "The mystery of the missing first letter".!slice(0)
+
 
 puts "Elementary,    my   dear        Watson!".squeeze(" ")  
 # => "Elementary, my dear Watson!"
+
 
 puts "z".ord
 # => 122
