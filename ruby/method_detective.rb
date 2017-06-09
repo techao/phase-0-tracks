@@ -23,12 +23,12 @@ puts "the usual" + " suspects".to_s
 
 puts "The case of the disappearing last letter".chop
 # => "The case of the disappearing last lette"
-
+# puts "The case of the disappearing last letter".slice!(1)
 
 puts "The mystery of the missing first letter".delete "T"
 # => "he mystery of the missing first letter"
-puts "The mystery of the missing first letter".!slice(0)
-
+puts "The mystery of the missing first letter".slice(1..-1)
+p "The mystery of the missing first letter".slice!(0)
 
 puts "Elementary,    my   dear        Watson!".squeeze(" ")  
 # => "Elementary, my dear Watson!"
