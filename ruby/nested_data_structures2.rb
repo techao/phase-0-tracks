@@ -61,6 +61,9 @@ specialty_drinks: {
 juices_smoothies: { 'green_smoothie' => ['Spinach', 'Kale', 'Apple', 'Ginger', 'Lemon'],
 	'red_juice' => ['Beet', 'Carrot', 'Ginger', 'Apple']}
 
+non_coffee_drinks: ['Gibraltar Hot Chocolate', 'Fruit Juice', 'Sodas', 'Energy Drinks', 'Water']
+
+}
 }
 
 
