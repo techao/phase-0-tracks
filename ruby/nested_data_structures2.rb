@@ -69,8 +69,11 @@ desserts: 'Hnad Crafted Daily Special '
 
 }
 
+p menu[:drip_coffee]
 
+p menu[:drip_coffee]["medium roast"][2]
 
+p menu[:specialty_drinks][:cold][3]
 
 
 
