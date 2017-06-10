@@ -25,7 +25,7 @@
 
 
 # --Fresh Organic Vegetable Juices---
-# Green Smoothie- 
+# Green Smoothie- Spinach/Kale/Apple/Ginger/Lemon
 # Red Juice- Beet/carrot/ginger/apple 
 
 # ---Non-Coffee Drinks---
@@ -61,9 +61,12 @@ specialty_drinks: {
 juices_smoothies: { 'green_smoothie' => ['Spinach', 'Kale', 'Apple', 'Ginger', 'Lemon'],
 	'red_juice' => ['Beet', 'Carrot', 'Ginger', 'Apple']}
 
-non_coffee_drinks: ['Gibraltar Hot Chocolate', 'Fruit Juice', 'Sodas', 'Energy Drinks', 'Water']
+non_coffee_drinks: ['Gibraltar Hot Chocolate', 'Fruit Juice', 'Sodas', 'Energy Drinks', 'Water']}
 
-}
+food_items: ['Quiche Loraine', 'Daily Vegetarian Special']
+
+deserts: 'Hnad Crafted Daily Special '
+
 }
 
 
