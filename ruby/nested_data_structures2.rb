@@ -25,7 +25,7 @@
 
 
 # --Fresh Organic Vegetable Juices---
-# Green Smoothie- Spinach/Kale/Apple/Ginger/Lemon
+# Green Smoothie- 
 # Red Juice- Beet/carrot/ginger/apple 
 
 # ---Non-Coffee Drinks---
@@ -52,12 +52,15 @@ drip_coffee: {
 	"dark roast" => ['12_oz','16_oz','20_oz'],
 	"decaf" => ['12_oz','16_oz','20_oz']},
 
-esspresso_drinks: ['Espresso', 'Macchiato', 'Gibraltar','Cappuccino', 'Americano', 'Latte']
+esspresso_drinks: ['Espresso', 'Macchiato', 'Gibraltar','Cappuccino', 'Americano', 'Latte'],
 
 specialty_drinks: {
 	hot: ['Guittard Mocha Latte', 'Vanilla Bean Latte', 'Caramel Latte', 'Havana Latte', 'Chai Latte'],
-	cold: ['East Bay Iced Latte', 'Nitro Tap', 'Nitro Tap Float', 'Tea' => ['Sweet', 'Un-sweet']]
-} 
+	cold: ['East Bay Iced Latte', 'Nitro Tap', 'Nitro Tap Float', 'Tea' => ['Sweet', 'Un-sweet']]}, 
+
+juices_smoothies: { 'green_smoothie' => ['Spinach', 'Kale', 'Apple', 'Ginger', 'Lemon'],
+	'red_juice' => ['Beet', 'Carrot', 'Ginger', 'Apple']}
+
 }
 
 
