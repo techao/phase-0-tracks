@@ -1,9 +1,9 @@
-# ---Menu----
-# Drip Coffee FETCO Brewed 12oz-16oz-20oz
+# -----Menu------
+# ---Drip Coffee FETCO Brewed 12oz-16oz-20oz---
 # Medium and Dark roasts available
 # Decaf
 # Traveler--96oz to-go
-# Espresso Drinks
+# ---Espresso Drinks---
 # Espresso
 # Macchiato 
 # Gibraltar
@@ -18,10 +18,9 @@
 # Havana Latte
 # Chai Latte
 # East Bay Iced Latte
-# Nitro Tap- cold brewed coffee infused with nitrogen
-# Nitro-Tap floats Nitro coffee with vanilla ice cream and chocolate shavings
+# Nitro Tap- 
+# Nitro-Tap floats Nitro
 # ---Tea---
-# Harney and Sons whole leaf selections served individually or in a tea pot
 # Sweet/Un-sweet brewed Iced tea
 
 
@@ -42,6 +41,28 @@
 
 # ---Desserts---
 # Hand Crafted desserts 
+
+
+
+
+menu = {
+
+drip_coffee: {
+	"medium roast" => ['12_oz','16_oz','20_oz'], 
+	"dark roast" => ['12_oz','16_oz','20_oz'],
+	"decaf" => ['12_oz','16_oz','20_oz']},
+
+esspresso_drinks: ['Espresso', 'Macchiato', 'Gibraltar','Cappuccino', 'Americano', 'Latte']
+
+specialty_drinks: {
+	hot: ['Guittard Mocha Latte', 'Vanilla Bean Latte', 'Caramel Latte', 'Havana Latte', 'Chai Latte'],
+	cold: ['East Bay Iced Latte', 'Nitro Tap', 'Nitro Tap Float', 'Tea' => ['Sweet', 'Un-sweet']]
+} 
+}
+
+
+
+
 
 
 
