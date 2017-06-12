@@ -99,6 +99,10 @@ extinct_animals.each {|key, value| print "#{key} - #{value}" + " * "}
 
 extinct_animals.delete_if {|key, value| value >= 2000}
 
+
+
+
+
 # 3. Our calculations were completely off, turns out all of those animals went
 # extinct 3 years before the date provided. Update the values in extinct_animals
 # so they accurately reflect what year the animal went extinct.
@@ -117,6 +121,15 @@ end
 # "Saiga Antelope"
 # Do not use any special built-in methods.
 # ----
+def extinct_check(animal, list)
+ list.each do | key, value |
+	if key == animal
+		 p "Extinct and on the list"
+	else 
+    	p "no match on extinct list"
+		end
+	end
+end
 
 # 5. We just found out that the Passenger Pigeon is actually not extinct!
 # Remove them from extinct_animals and return the key value pair as a two item array.
