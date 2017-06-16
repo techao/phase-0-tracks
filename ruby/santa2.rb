@@ -7,7 +7,16 @@ class Santa
 		@ethnicity = ethnicity
 		@age = age = 0
 	end
-
+	def gender=(genders)
+		@gender = genders
+	end
+	def age
+		@age
+	end
+	def ethnicity
+		@ethnicity
+	end
+	
 	def speak
 		puts "Ho, ho, ho! Haaaappy holidays!"
 	end
