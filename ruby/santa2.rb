@@ -32,6 +32,16 @@ class Santa
 	reindeer_ranking = ["Rudolph", "Dasher", "Dancer", "Prancer", "Vixen", "Comet", "Cupid", "Donner", "Blitzen"]
 end
 
+genders = ["agender", "female", "bigender", "male", "female", "gender fluid", "N/A"]
+ethnicities = ["black", "Latino", "white", "Japanese-African", "prefer not to say", "Wizard/Witch", "Armenian", "Irish-Chinese", "Mystical Creature (unicorn)", "N/A"]
+  index = 0
+  while index <=299
+  santa = Santa.new(genders.sample, ethnicities.sample)
+  santa.age
+  p santa
+  index +=1 
+  end
+
 mary = Santa.new('female', 'amernian')
 mary.speak
 mary.eat_milk_n_cookies('chocolate chip cookie')
