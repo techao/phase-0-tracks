@@ -16,7 +16,9 @@ class Santa
 	def eat_milk_n_cookies(cookie)
 		puts "That was a good #{cookie}!" 
 	end
-
+		def age
+	 	@age = rand(140)
+	 end
 	def celebrate_bday
 		@age += 1
 	end
