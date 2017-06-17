@@ -41,7 +41,7 @@ end
 
 class Player2
 	include Shout
-ends
+end
 
 player1 = Player1.new
 player1.yell_taunt
@@ -51,4 +51,5 @@ player2.yell_win('just watch me school you')
 
 player1.yell_pain('Easy with elbows!')
 player2.yell_sorry
+
 
