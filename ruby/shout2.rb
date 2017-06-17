@@ -1,24 +1,25 @@
 # module Shout
-#   def self.yell_angrily(words)
+# 	 def self.yell_angrily(words)
 #     words + "!!!" + " :("
 #   end
-
-#   def self.yelling_happily(words2)
+#    def self.yelling_happily(words2)
 #   	words2 + "!!!" + "|_^o^_/ "
 #   end
 # end
 
-# # Driver Code
-# puts Shout.yelling_happily ('I just won the lotto')
+# # driver code
 
-# Shout.yell_angrily('But now I have to pay texes on it')
+# puts Shout.yelling_happily ('I am so happy')
 
-module Shout 
+# puts Shout.yell_angrily ("Now I'm not")
+
+
+module Shout
 	def yell_win(words)
-		puts words + " #FTW !!!" + '\_^0^_/'
+		puts words + "FTW!!!" + '\_^0^_/'
 	end
 	def yell_loss(words2)
-		puts words + "Aww well, there's always next time"
+		puts words2 + "Aww well, there's always next time"
 	end
 	def yell_pain(words3)
 		puts words3 + 'Owwwww Owww Owww Owww' + 'T__T'
