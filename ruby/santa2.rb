@@ -7,7 +7,7 @@ class Santa
 		@gender = gender
 		@ethnicity = ethnicity
 		@age = age = 0
-		@reindeer_ranking = ["Rudolph", "Dasher", "Dancer", "Prancer", "Vixen", "Comet", "Cupid", "Donner", "Blitzen"]
+		@reindeer_ranking = ["Rudolph", "Dasher", "Dancer", "Prancer", "Vixen", "Comet", "Cupid", "Donner", "Blitzen"]r
 	end
 
 	def speak
