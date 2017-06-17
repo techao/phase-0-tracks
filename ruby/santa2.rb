@@ -7,6 +7,7 @@ class Santa
 		@gender = gender
 		@ethnicity = ethnicity
 		@age = age = 0
+		@reindeer_ranking = ["Rudolph", "Dasher", "Dancer", "Prancer", "Vixen", "Comet", "Cupid", "Donner", "Blitzen"]
 	end
 
 	def speak
@@ -27,11 +28,6 @@ class Santa
 		reindeer_ranking.delete_if {|name| name.to_s == reindeer }
 		reindeer_ranking.push(reindeer)
 	end
-
-
-
-	
-	reindeer_ranking = ["Rudolph", "Dasher", "Dancer", "Prancer", "Vixen", "Comet", "Cupid", "Donner", "Blitzen"]
 end
 
 genders = ["agender", "female", "bigender", "male", "female", "gender fluid", "N/A"]
