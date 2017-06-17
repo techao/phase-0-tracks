@@ -28,7 +28,6 @@ class Santa
 		reindeer_ranking.delete_if {|name| name.to_s == reindeer }
 		reindeer_ranking.push(reindeer)
 	end
-
 end
 
 genders = ["agender", "female", "bigender", "male", "female", "gender fluid", "N/A"]
