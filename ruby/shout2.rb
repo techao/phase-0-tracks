@@ -7,3 +7,8 @@ module Shout
   end
 end
 
+# driver code
+
+puts Shout.yelling_happily ('I am so happy')
+
+puts Shout.yell_angrily ("Now I'm not")
