@@ -14,6 +14,7 @@ attr_accessor :word, :guessword
 	 def given_word(word)
 	 @guessword = word.to_s.split('')
 	end
+end
 
 player_1 = Word_game.new
 puts 'Player 1 enter a word'
