@@ -1,5 +1,5 @@
 class Word_game
-attr_accessorr :word, :word_to_guess
+attr_accessor :word, :word_to_guess
 
 def iniitialize
 	@word_to_guess = given_word.to_s.split('')

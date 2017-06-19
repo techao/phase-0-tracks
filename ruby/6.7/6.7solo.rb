@@ -28,7 +28,8 @@ attr_accessor :word, :guessword, :guessword2
 
 end
 
-while player1.guessword.count < word.length
+while player1.guessword.count('') < word.count
+end
 
 
 player1 = Word_game.new
