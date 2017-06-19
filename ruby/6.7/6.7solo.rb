@@ -1,6 +1,4 @@
 
-# possible module isntead of class
-# module Hang_man
 	class Word_game
 
 attr_reader :correct_guess
@@ -16,20 +14,13 @@ attr_accessor :word, :guessword
 	 def given_word(word)
 	 @guessword = word.to_s.split('')
 	end
-# end
 
-# class Player1
-# 	include Hang_man
-# end
-
-# class Player2
-# 	include Hang_man
-# end
-
-
-player_1 = Player1.new
+player_1 = Word_game.new
 puts 'Player 1 enter a word'
-player_1.Word_game.given_word
+word = gets.chomp
+player_1.given_word(word.to_str)
+
+
 
 
 
