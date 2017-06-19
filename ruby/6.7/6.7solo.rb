@@ -1,10 +1,13 @@
 
 # possible module isntead of class
-module Hang_man
+# module Hang_man
+
+
+class word_game
+
 attr_reader :correct_guess
 attr_accessor :word
 
-# possible class instance here
 	def initialize
 		@word = word
 		@guess_count = word.length 
@@ -14,12 +17,12 @@ attr_accessor :word
 
 end
 
-class Player1
-	include Hang_man
-end
+# class Player1
+# 	include Hang_man
+# end
 
-class Player2
-	include Hang_man
-end
+# class Player2
+# 	include Hang_man
+# end
 
 
