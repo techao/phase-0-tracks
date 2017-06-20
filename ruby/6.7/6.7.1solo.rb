@@ -1,26 +1,34 @@
-class Word_game
-attr_accessor :word, :word_to_guess
 
-def iniitialize
-	@word_to_guess = given_word.to_s.split('')
-	@guess_count = 0
-	@completeword = false 
-end
+  class Word_game
 
-def given_word(word)
-	word_to_guess = "#{word}"
-end
+attr_reader :correct_guess
+attr_accessor :word, :guessword, :guessword2
 
-def guessed_letter(letter)
-	if guessword.include?(guess)
-    alphabet_index = guessword.find_index(guess)
-    guessword[alphabet_index] = ""
-    word[alphabet_index] = guess
-    puts "YES! Guess the word...:#{guessword2.join}"
-  else
-    puts "Sorry that letter isnt in the word. Guess the word...#{guessword2}"
+  def initialize
+    @guessword = guessword
+    @guessword2 = guessword2
+    @word = word
+    @guess_count = 0 
+    @correct_guess = false
+    @alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
   end
+
+    
+  end
+# guessword is the given msytery word turned into an array
+
+   def given_word(word)
+   @guessword = word.to_s.split('')
+  end
+# guessword2 will be blank array 
+  def blank_word(word)
+    @guessword2 = word.gsub(/[a-z]/, '_').split('')
+  end
+
+
 end
+
+while player1.guessword.count('') < word.count
 end
 
 
@@ -28,4 +36,9 @@ player1 = Word_game.new
 puts 'Player 1 enter a word'
 word = gets.chomp
 player1.given_word(word.to_str)
+
+
+
+
+
 
