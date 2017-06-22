@@ -34,8 +34,13 @@ function reverse(s) {
 console.log(reverse('print this backwards'))
 
 var thisString = reverse('1234');
-console.log(thisString)
-   
+console.log(thisString);
+
+
+var year2017 = true;
+if (year2017) {
+	console.log(thisString);
+   }
 
 
 
