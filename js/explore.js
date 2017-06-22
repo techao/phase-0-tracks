@@ -30,6 +30,11 @@ function reverse(s) {
     	return reversedString;
 }
 
+
+console.log(reverse('print this backwards'))
+
+var thisString = reverse('1234');
+console.log(thisString)
    
 
 
