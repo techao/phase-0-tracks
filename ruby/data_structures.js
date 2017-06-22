@@ -1,4 +1,12 @@
-var horseColours = ["green with red dots", "blue with white stripes", "black with yellow stars", "inivisible"]
+var horsecolours = ["green ", "blue", "black with yellow stars", "inivisible"];
+horsenames = ["Igneel", "Gajeel", "Mystogan", "Hajime"];	
 
-var horseNames = ["Igneel", "Gajeel", "Mystogan", "Hajime"]
 
+
+horsenames.push("Ed")
+
+function add(namelist, name){
+	namelist.push(name); 
+}
+
+console.log(add(horsenames, "Ed"));
