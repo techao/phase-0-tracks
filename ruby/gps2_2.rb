@@ -17,14 +17,14 @@
 # output:samee hash list without the name of item given for delete method
 
 # Method to update the quantity of an item
-# input:has list, 
-# steps:
-# output:
+# input:hash list, item, quantity
+# steps:access string element in hash and reassign key value.
+# output:hash with strings and updated key value
 
 # Method to print a list and make it look pretty
-# input:
-# steps:
-# output:
+# input:hash list
+# steps: itterate through each key value pair and print each key string ,i.e. item, with its corresponding key value
+# output: String stating number of items needed. 
 
 
 def make_a_list(str)
@@ -39,23 +39,21 @@ def add_item(grcy_list, string, i=1)
   grcy_list[string] = i
 end
 
-# def delete_item(grcy_list, str)
-# 	grc_list2 = {}
-# 	grcy_list.each  do |item|
-# 	grcy_list.delete_if {|item| item == str}
-# IE. 
-# if item != str
-# grc_list2[item] = 1
-# end 
-
-
-# 	end 
-# end
 
 def remove_item(grcy_list, string)
  grcy_list.delete(string)
 end
 
+def update_quantity(grcy_list, string, i)
+	grcy_list[string] = i  
+end
+
+
+def print_list(grcy_list)
+	grcy_list.each do |item, quantity|
+		puts "You need #{quantity} #{item}"
+	end
+end
 
 
 june_groc_list = make_a_list("avacados oranges potatoes dozeneggs loaf_of_bread")
@@ -70,7 +68,27 @@ puts june_groc_list
 remove_item(june_groc_list, "avacadoS")
 puts june_groc_list
 
+update_quantity(june_groc_list, "potatoes", 16)
+puts june_groc_list
 
+print_list(june_groc_list)
+
+
+
+
+
+# def delete_item(grcy_list, str)
+# 	grc_list2 = {}
+# 	grcy_list.each  do |item|
+# 	grcy_list.delete_if {|item| item == str}
+# IE. 
+# if item != str
+# grc_list2[item] = 1
+# end 
+
+
+# 	end 
+# end
 
 
 
