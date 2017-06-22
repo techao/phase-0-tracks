@@ -13,7 +13,22 @@
 // once all letters in string have been accessed, 'i' will = 0 ending the loop, given that i is not longer greater than 0. 
 // subtracting 1 from either the string length variable 'i' or 'i' in the character access method will account for index starting at 0.
 
+// function reverseStr(str) { 
+// 	var reversedString = "";
+// 	for (i = (str.length - 1); i >=0; i--) { 
+// 		reversedString += str.charAt(i);  
+// 	}
+// 		return reversedString;
+// }
 
+
+function reverse(s) {
+	var reversedString = "";
+    for(i = s.length; i > 0; i--) {
+    	reversedString += s.charAt(i-1);
+	}   
+    	return reversedString;
+}
 
    
 
