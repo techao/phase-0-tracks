@@ -9,7 +9,11 @@ console.log(horsecolours);
 console.log(horsenames);
 
 var horses = {};
-for (var i = 0; i < horsecolours.length; i++); {
- horses[horsenames[i]] = horsecolours[i]); 
-}
+for(var y = 0; y < horsecolours.length; y++){
+   for(var i = 0; i < horsenames.length; i++){
+       horses[horsenames[i]] = horsecolours[y++];
+   }
+ }
+
+console.log(horses);
 
