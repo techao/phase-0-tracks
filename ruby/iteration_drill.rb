@@ -34,8 +34,8 @@ def supply_check(item, list)
     if item == listItem
       return true
     end
-  end
 return false
+  end 
 end
 
 boot = "boots"
@@ -136,3 +136,5 @@ end
 # Find the built-in method that helps you accomplish this in the Ruby documentation
 # for Hashes.
 # ----
+
+def

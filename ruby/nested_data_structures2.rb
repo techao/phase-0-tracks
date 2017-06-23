@@ -65,7 +65,7 @@ non_coffee_drinks: ['Gibraltar Hot Chocolate', 'Fruit Juice', 'Sodas', 'Energy D
 
 food_items: ['Quiche Loraine', 'Daily Vegetarian Special']
 
-desserts: 'Hnad Crafted Daily Special '
+desserts: 'Hand Crafted Daily Special '
 
 }
 
