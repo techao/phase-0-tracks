@@ -2,8 +2,22 @@ require_relative 'dancer.rb'
 
 describe Dancer do
   let(:dancer) { Dancer.new("Misty Copeland", 33) }
+  it "has a readable name" do
 
-  it "pirouettes" do
+    expect(dancer.name).to eq "Misty Copeland"
+  end
+
+  it "has a readable age" do
+    expect(dancer.age).to eq 33
+  end
+
+  it "has a writeable age" do
+    dancer.age = 34
+    expect(dancer.age).to eq 34
+  end
+
+    it "pirouettes" do
+
     expect(dancer.pirouette).to eq "*twirls*"
   end
 
@@ -11,34 +25,58 @@ describe Dancer do
     expect(dancer.bow).to eq "*bows*"
   end
 
-  it "has a readable name" do
-    expect(dancer.name).to eq "Misty Copeland"
+    it "keeps a readable dance card" do
+    expect(dancer.card).to eq []
   end
 
-#   it "has a readable age" do
-#     expect(dancer.age).to eq 33
-#   end
 
-#   it "has a writeable age" do
-#     dancer.age = 34
-#     expect(dancer.age).to eq 34
-#   end
-
-#   it "keeps a readable dance card" do
-#     expect(dancer.card).to eq []
-#   end
-
-#   it "can queue parters on the dance card" do
-#     dancer.queue_dance_with("Mikhail Baryshnikov")
-#     expect(dancer.card).to eq ["Mikhail Baryshnikov"]
-#     dancer.queue_dance_with("Anna Pavlova")
-#     expect(dancer.card).to eq ["Mikhail Baryshnikov", "Anna Pavlova"]
-#   end
-
-#   it "can start next dance from queue" do
-#     dancer.queue_dance_with("Mikhail Baryshnikov")
-#     dancer.queue_dance_with("Anna Pavlova")
-#     expect(dancer.begin_next_dance).to eq "Now dancing with Mikhail Baryshnikov."
-#     expect(dancer.card).to eq ["Anna Pavlova"]
-#   end
+it "can add parters to the dance card queue" do
+  dancer.queue_dance_with("Mikhail Baryshnikov")
+  expect(dancer.card).to eq ["Mikhail Baryshnikov"]
+  dancer.queue_dance_with("Anna Pavlova")
+  expect(dancer.card).to eq ["Mikhail Baryshnikov", "Anna Pavlova"]
 end
+
+it "can start the next dance in the queue" do
+  dancer.queue_dance_with("Mikhail Baryshnikov")
+  dancer.queue_dance_with("Anna Pavlova")
+  expect(dancer.begin_next_dance).to eq "Now dancing with Mikhail Baryshnikov."
+  expect(dancer.card).to eq ["Anna Pavlova"]
+end
+
+it "change tutu from default pink to black" do
+dancer.change_tutu("black")
+expect(dancer.tutu_colour).to eq "black"
+expect(dancer.current_tutu).to eq "The tutu is now black."
+dancer.change_tutu("gold")
+expect(dancer.current_tutu).to eq "The tutu is now gold."
+end 
+
+it "cant change colour from outside the class"do
+dancer.change_tutu("gold")
+expect(dancer.tutu_colour).to eq "gold"
+end 
+it "to change age from outside of class" do 
+dancer.age = 20
+expect(dancer.age).to eq 20
+end
+
+it "change tutu colour with method and " do 
+dancer.change_tutu("white")
+expect(dancer.current_tutu).to eq "The tutu is now white."
+expect(dancer.tutu_colour).to eq "white"
+end 
+# TEST DIDNT QUITE RUN THE WAY I WAS HOPING FOR IT TO
+
+it "expect failure; be unable to change by reassigning string from outside class " do
+expect(dancer.tutu_colour = "green").to fail
+end 
+
+end 
+  
+
+
+
+
+
+
