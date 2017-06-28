@@ -10,7 +10,10 @@ function Dog(name, age, isGoodDog) {
 	this.name = name;
 	this.age = age; 
 	this.isGoodDog = isGoodDog;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 461b0804a04df22b7cc8cbff6b2b9ce5e6814391
 	this.bark = function() { 
 		console.log("Woof!"); 
 	};
