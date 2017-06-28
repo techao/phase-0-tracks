@@ -1,3 +1,4 @@
+```
 [Back](13_looping_through_arrays.md)
 
 # 14. Each, Map, Select, Max
@@ -11,41 +12,40 @@ In the interest of simplicity, the new implementations will be global functions,
 See if you can figure out how each works, and then tinker with it on your own in the browser console.
 
 ### Each
-
-```javascript
+javascript
 // Array#each
+```
 var each = function(array, func) {
   for (var i=0; i < array.length; i++) {
     func(array[i]);
   }
 };
-```
 
-The `each()` function defined above takes two arguments: an array and a function.  `each()` then iterates through every element in the array and passes it to the function `func` (we can't use the word `function` for a parameter since it is a reserved word).
+
+
+```The `each()` function defined above takes two arguments: an array and a function.  `each()` then iterates through every element in the array and passes it to the function `func` (we can't use the word `function` for a parameter since it is a reserved word).
 
 What is the purpose of the `func` parameter?  In Ruby, you might call `Array#each` like this:
 
-```ruby
+ruby
 [1,2,3,4].each { |n| puts n }
-```
 
 The `{ |n| puts n }` is the block of code passed to `each`.  JavaScript does not have a separate object for blocks, so we instead use a **callback function**: a function called as an argument from another function.  The parameter `func` stands in for a function which will be called with the argument `array[i]`.  
 
 Here is an example of how you could use this function:
-
-```javascript
+```
+// javascript
 // Define an array
 var bugs = ["beetle", "spider", "yellow jacket", "firefly"];
 
 // Execute the each() function, passing it a callback function
 each(bugs, function(x) { console.log(x); });
-```
 
 ### Map
 
-Ruby's `Array#map` method will pass each element in an array to a block, and then return a new array of the modified elements.  Here is how we can accomplish this in JavaScript:
+// Ruby's `Array#map` method will pass each element in an array to a block, and then return a new array of the modified elements.  Here is how we can accomplish this in JavaScript:
 
-```javascript
+javascript
 var map = function(array, func) {
   var results = [];
   

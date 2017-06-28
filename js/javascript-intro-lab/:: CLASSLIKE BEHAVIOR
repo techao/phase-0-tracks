@@ -1,0 +1,32 @@
+// CLASSLIKE BEHAVIOR
+line 1-6
+// In addition to literal construction, which is
+// done by simply typing out the data structure ...
+
+
+line 8 - 12function 
+// ... we can write what's called a constructor function
+// that can be used to make lots of dogs.
+// We don't HAVE to write a constructor function,
+// but if we know we'll need a bunch of objects with
+// the same properties, such functions are handy.
+// Constructor functions have capitalized names.
+
+line 9 console
+// In this context, 'this' refers to 
+// the individual dog we're making
+line 10- 13
+// Therefore, this.name is sort of the Ruby
+// equivalent of @name
+line 14-16
+// As for behavior, a function is a perfectly 
+// valid property value ... whoa!
+line 20
+// Here is where we call that constructor function
+// that we just made ...
+line 37
+// You can use functions as values anytime, not just
+// in constructor functions. Here we use literal
+// construction:
+
+// You can add behavior the way you'd add any other key-value pair.
