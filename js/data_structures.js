@@ -69,10 +69,14 @@ var each = function(array, func) {
 };
 each(randomCar1, function(x) { console.log(x); });
 
+// ...is it because constructor function crates instance objects.
+// make them not globally accessiable 
+
+// If so, disadvantages of using a object constructor is obvious, 
+// inability to access that instance object from anywheere or use 
+// or apply certain methods and functions. 
 
 
-
-// no assces when droping variable to assign to newCar Function
 
 
 
