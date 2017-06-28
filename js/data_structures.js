@@ -8,8 +8,6 @@ horsecolours.push("forest gold");
 console.log(horsecolours);
 console.log(horsenames);
 
-<<<<<<< HEAD
-
 
 var horses = {};
 	for(var y = 0; y < horsecolours.length; y++){
@@ -21,7 +19,7 @@ var horses = {};
 console.log(horses);
 
 
-=======
+
 var horses = {};
 for(var y=0; y<horsecolours.length; y++){
    for(var i=0; i<horsenames.length; i++){
@@ -31,9 +29,7 @@ for(var y=0; y<horsecolours.length; y++){
 
 console.log(horses);
 
-<<<<<<< HEAD
->>>>>>> 2058f47b89e990328665763fcb000a548e4d10be
-=======
+
 
  // write a constructor function for a car. Give it a few different properties of various data types, including at least one function. Demonstrate that your function works by creating a few cars with it.
 
@@ -100,4 +96,4 @@ each(randomCar1, function(x) { console.log(x); });
 
 
 
->>>>>>> 461b0804a04df22b7cc8cbff6b2b9ce5e6814391
+
